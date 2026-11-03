@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>배기수 | Brand Marketer Portfolio</title>
+<meta name="description" content="인하우스·에이전시·크리에이터 경험을 갖춘 4년차 브랜드 마케터 배기수의 포트폴리오">
+<meta property="og:title" content="배기수 | Brand Marketer Portfolio">
+<meta property="og:description" content="인하우스·에이전시·크리에이터 경험을 갖춘 4년차 브랜드 마케터">
+<meta property="og:image" content="img/gto1.jpg">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+:root{--ink:#111;--sub:#666;--line:#e5e5e5;--bg:#fff;--soft:#f6f6f6}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Pretendard,-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;color:var(--ink);background:var(--bg);line-height:1.65;word-break:keep-all;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:56px}
+nav .logo{font-weight:800;letter-spacing:-.01em}
+nav ul{display:flex;gap:22px;list-style:none;font-size:14px}
+nav a{text-decoration:none;color:var(--sub)}nav a:hover{color:var(--ink)}
+.hero{padding:88px 0 64px;border-bottom:1px solid var(--line)}
+.hero .grid{display:grid;grid-template-columns:1.5fr 1fr;gap:48px;align-items:end}
+.eyebrow{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--sub);margin-bottom:18px}
+.hero h1{font-size:clamp(34px,5vw,56px);line-height:1.18;font-weight:800;letter-spacing:-.02em}
+.hero p.lead{margin-top:24px;font-size:17px;color:#333;max-width:620px}
+.hero img{width:100%;max-width:300px;aspect-ratio:4/5;object-fit:cover;display:block;margin-left:auto;filter:grayscale(1)}
+.links{display:flex;gap:10px;margin-top:28px;flex-wrap:wrap}
+.btn{display:inline-block;padding:10px 18px;border:1px solid var(--ink);font-size:14px;font-weight:600;text-decoration:none}
+.btn.fill{background:var(--ink);color:#fff}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid var(--line)}
+.stat{padding:36px 24px;border-right:1px solid var(--line)}.stat:last-child{border-right:0}
+.stat b{display:block;font-size:34px;font-weight:800;letter-spacing:-.02em}
+.stat span{font-size:14px;color:var(--sub)}
+section{padding:80px 0;border-bottom:1px solid var(--line)}
+h2{font-size:30px;font-weight:800;letter-spacing:-.02em;margin-bottom:36px;display:flex;align-items:baseline;gap:14px}
+h2 small{font-size:14px;font-weight:500;color:var(--sub)}
+.career{display:grid;gap:0}
+.job{display:grid;grid-template-columns:180px 1fr;gap:24px;padding:24px 0;border-top:1px solid var(--line)}
+.job:last-child{border-bottom:1px solid var(--line)}
+.job .when{font-size:14px;color:var(--sub);font-variant-numeric:tabular-nums}
+.job h3{font-size:19px;font-weight:700}
+.job h3 em{font-style:normal;font-weight:500;color:var(--sub);font-size:15px;margin-left:8px}
+.job p{margin-top:6px;color:#333;font-size:15px}
+.job ul{margin-top:8px;padding-left:18px;font-size:15px;color:#333}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin:-12px 0 32px}
+.filters button{font:inherit;font-size:13px;padding:7px 14px;border:1px solid var(--line);background:#fff;cursor:pointer}
+.filters button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.proj{padding:44px 0;border-top:1px solid var(--line)}
+.proj:first-of-type{border-top:0;padding-top:0}
+.proj-head{display:grid;grid-template-columns:1fr auto;gap:16px;align-items:end;margin-bottom:20px}
+.proj-head h3{font-size:24px;font-weight:800;letter-spacing:-.01em;line-height:1.3}
+.meta{font-size:13px;color:var(--sub);margin-top:6px}
+.tag{font-size:12px;border:1px solid var(--ink);padding:3px 10px;white-space:nowrap;justify-self:start}
+.gallery{display:grid;grid-template-columns:repeat(var(--n,4),1fr);gap:8px;margin-bottom:24px}
+.gallery img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block;background:var(--soft)}
+.summary{font-size:16px;color:#222;max-width:820px}
+.psr{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:24px}
+.psr div{background:#fff;padding:20px}
+.psr h4{font-size:12px;letter-spacing:.1em;color:var(--sub);margin-bottom:10px;font-weight:600}
+.psr p,.psr li{font-size:14px;color:#222}
+.psr ul{padding-left:16px}
+.psr .res{background:var(--ink);color:#fff}
+.psr .res h4{color:#aaa}.psr .res li{color:#fff}
+.psr .res strong{display:block;font-size:20px;font-weight:800;margin-bottom:2px}
+.psr .res li{list-style:none;margin-bottom:12px}
+.psr .res ul{padding-left:0}
+.contact{text-align:left}
+.contact p{font-size:17px;color:#333;max-width:640px}
+footer{padding:28px 0;font-size:13px;color:var(--sub)}
+@media (max-width:820px){
+ nav ul{display:none}
+ .hero{padding:56px 0 44px}
+ .hero .grid{grid-template-columns:1fr;gap:28px}
+ .hero img{margin-left:0;max-width:200px}
+ .stats{grid-template-columns:repeat(2,1fr)}
+ .stat{border-bottom:1px solid var(--line)}
+ .stat:nth-child(2n){border-right:0}
+ .job{grid-template-columns:1fr;gap:4px}
+ .gallery{grid-template-columns:repeat(2,1fr)}
+ .psr{grid-template-columns:1fr}
+ .proj-head{grid-template-columns:1fr}
+ section{padding:56px 0}
+}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><span class="logo">BAE GISU</span>
+<ul><li><a href="#about">About</a></li><li><a href="#career">Career</a></li><li><a href="#projects">Projects</a></li><li><a href="#contact">Contact</a></li></ul></div></nav>
+
+<header class="hero" id="about"><div class="wrap grid">
+<div>
+<p class="eyebrow">Brand Marketer · 4 Years</p>
+<h1>브랜드의 이야기를<br>콘텐츠와 현장으로 옮기는<br>마케터 배기수입니다.</h1>
+<p class="lead">인하우스·에이전시·크리에이터를 모두 경험했습니다. 시원아이웨어에서 13개 글로벌 아이웨어 브랜드를 맡았고, 2025년 PR 에이전시 엠앤아이를 설립해 코오롱FnC 시리즈, 헨리코튼, 캠브리지 멤버스, 멘토스 등 10개 브랜드의 캠페인을 운영하고 있습니다.</p>
+<div class="links">
+<a class="btn fill" href="#projects">프로젝트 보기</a>
+<a class="btn" href="mailto:mynameisyours@naver.com">mynameisyours@naver.com</a>
+<a class="btn" href="https://www.instagram.com/mynameisbaekisoo" target="_blank" rel="noopener">Instagram</a>
+</div>
+</div>
+<img src="img/me1.jpg" alt="배기수 프로필 사진">
+</div></header>
+
+<div class="wrap"><div class="stats">
+<div class="stat"><b>5,000만</b><span>인플루언서 협업 누적 조회수</span></div>
+<div class="stat"><b>1,000+</b><span>협업 인플루언서</span></div>
+<div class="stat"><b>300%</b><span>시리즈 에어트루퍼 전년 대비 판매</span></div>
+<div class="stat"><b>1만 명</b><span>시리즈×GTO 팝업 11일 방문객</span></div>
+</div></div>
+
+<section id="career"><div class="wrap">
+<h2>Career <small>총 4년</small></h2>
+<div class="career">
+<div class="job"><div class="when">2025.04 – 현재</div><div><h3>엠앤아이<em>PR·인플루언서 마케팅 에이전시 / 대표</em></h3>
+<p>시리즈, 헨리코튼, 캠브리지 멤버스, 찰스앤키스, 이로 파리, 멘토스, 무신사 엠프티 등 진행</p>
+<ul><li>시딩·협찬, 매거진·셀럽 섭외, 팝업 현장 운영, 결과 리포트까지 전 과정 담당</li><li>인플루언서·모델 네트워크 5,000명 이상 운영</li></ul></div></div>
+<div class="job"><div class="when">2025.01 – 2025.04</div><div><h3>더네이쳐홀딩스<em>내셔널지오그래픽 마케팅팀 / 사원</em></h3>
+<p>공식 인스타그램 피드·릴스 기획·운영 및 카피라이팅. 릴스 최대 101.2만 회, 백팩 검색량 3배, 매장 매출 1.5배</p></div></div>
+<div class="job"><div class="when">2024.01 – 2025.04</div><div><h3>태에이전시<em>PR팀 / 프리랜서 실장</em></h3>
+<p>바버, 래쉬아이웨어, 보타 인플루언서 PR·행사 기획. 바버 130주년 프로젝트 인플루언서 50명 섭외</p></div></div>
+<div class="job"><div class="when">2022.09 – 2024.05</div><div><h3>(주)시원아이웨어<em>브랜드전략부 마케팅팀 / 주임</em></h3>
+<p>Silhouette, 999.9, ZEGNA, Jill Stuart, Hazzys, Yohji Yamamoto 등 13개 글로벌 아이웨어 브랜드 마케팅</p>
+<ul><li>브랜드 화보 6회·제품 화보 22건 단독 기획, 트렁크쇼 등 이벤트 7회 운영</li><li>신규 거래처 34곳 확보, 전년 대비 매출 3배</li></ul></div></div>
+</div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+<h2>Projects <small id="pcount"></small></h2>
+<div class="filters" id="filters"></div>
+<div id="plist"></div>
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap">
+<h2>Contact</h2>
+<p>브랜드에 맞는 사람과 매체, 시기를 고르고 현장까지 끝까지 챙기는 것이 저의 강점입니다. 온라인에서 시작된 관심이 매장 방문과 구매로 이어지는 캠페인을 만들어 가겠습니다.</p>
+<div class="links">
+<a class="btn fill" href="mailto:mynameisyours@naver.com">메일 보내기</a>
+<a class="btn" href="https://www.instagram.com/mynameisbaekisoo" target="_blank" rel="noopener">Instagram @mynameisbaekisoo</a>
+</div>
+</div></section>
+<footer><div class="wrap">© 2026 Bae Gisu</div></footer>
+
+<script>
+const P=[
+{k:'s26',n:4,org:'엠앤아이',t:'시리즈 26FW IG & YT 콘텐츠 캠페인',when:'2026.08 – 2026.10',c:'100%',
+s:'코오롱FnC 시리즈 26FW 에어트루퍼·체크셔츠·로우하이드·언어펙티드 콜라보 라인의 인스타그램·유튜브 콘텐츠 대행. 라인별 크리에이터를 나눠 8~10월에 운영했습니다.',
+p:['네 개 라인을 한 시즌 안에 각기 다른 무드로 알려야 했음','기존 팔로워 노출만으로는 신규 고객에게 닿기 어려웠음','조회수만으로는 구매 고려 반응을 판단하기 어려웠음'],
+so:['라인별 인플루언서 선정, 8~10월 공개 시점 분산','릴스·유튜브 숏츠 비중을 높여 비팔로워 도달 확대','크리에이터별 인사이트(저장·공유·유입 검색어) 수령 후 리포트화'],
+r:[['총 조회수 120만 회','콘텐츠 72건 · 참여율 2.6%'],['릴스 비팔로워 조회 56%','피드 평균 33% 대비 높은 신규 도달'],['저장 1,255 · 공유 772','숏츠 유입 검색어 1위 ‘에어트루퍼’']]},
+{k:'gto',n:4,org:'엠앤아이',t:'시리즈 × GTO IP 협업 PR 캠페인 (성수 팝업)',when:'2026.03 – 2026.05',c:'100%',
+s:'코오롱FnC 시리즈와 일본 IP ‘GTO’ 협업 PR 캠페인 집행 대행. 매체·인플루언서 선정, 공개 일정 조율, 셀럽 캐스팅, RSG 성수 팝업 현장 운영을 담당했습니다.',
+p:['GTO 협업 제품 중 어떤 품목을 PR 대상으로 내세울지 정해야 했음','애니·바이크·패션 커뮤니티를 한 캠페인에서 동시에 공략해야 했음','팝업 방문이 다시 SNS 콘텐츠로 이어질 장치가 필요했음'],
+so:['GTO 세계관 연관성 기준으로 PR 품목 우선순위 정리','커뮤니티별 매체·인플루언서 선정, 사전 바이럴→오픈→방문 인증 순으로 공개','셀럽(곽범) 캐스팅·협상 및 11일 현장 운영'],
+r:[['방문객 1만 명','11일 운영 · 현장 프로그램 참여 2,500명'],['목표 대비 매출 150%','구매 고객 81% 신규, 그중 75% 2030'],['SNS 총 조회수 300만 회','IG·블로그·유튜브·웹매거진 합산']]},
+{k:'mentos',n:2,org:'엠앤아이',t:'멘토스 필링베리굿 셀럽 브랜디드 콘텐츠',when:'2026.01',c:'100%',
+s:'멘토스 ‘Feeling Berry Good’ 캠페인의 유튜브·인스타그램 브랜디드 콘텐츠 집행 대행. 에픽하이·밈PD 캐스팅과 댓글 이벤트 운영을 담당했습니다.',
+p:['발랄한 캔디 이미지에서 2030이 공감할 도시적 무드로 전환이 필요했음','이동·식후 리프레시 간식으로서 인지도가 낮았음','직접적인 제품 노출에 대한 광고 거부감'],
+so:['도시적 무드의 셀럽 리스트업 후 에픽하이·밈PD 캐스팅','채널별 톤에 맞춘 기획안, 숏츠·롱폼·릴스 같은 기간 집중 업로드','구독자 댓글 이벤트, 초안 검수 및 결과 리포트'],
+r:[['합산 조회수 234만 회','YT 숏츠·브랜디드·IG 릴스'],['댓글 이벤트 371명 참여','제품 관심도·체험 수요 확인'],['채널 구독자 290만','에픽하이 등 협업 채널 누적']]},
+{k:'at25',n:4,org:'엠앤아이',t:'시리즈 에어트루퍼 IG & YT 시딩 캠페인',when:'2025.10 – 2025.11',c:'100%',
+s:'구스다운 신제품 에어트루퍼와 언어펙티드 콜라보 제품의 인스타그램·유튜브 시딩 대행. 제품과 어울리는 인플루언서·유튜버를 선정하고 업로드 시점을 나눠 운영했습니다.',
+p:['실착·활동·기온·체형을 보여주는 콘텐츠가 부족했음','기능·가격·디자인이 비슷한 경쟁 제품이 많았음','유료 광고보다 효율 높은 자연 확산 채널이 필요했음'],
+so:['체형·스타일이 다른 크리에이터 매칭, 피드·릴스·숏츠로 실착 콘텐츠 확보','제품별 USP를 가이드에 담고 업로드 시점을 나눠 반복 노출','자사몰 기획전·브랜드 리그램으로 2차 활용'],
+r:[['전년 대비 판매 300%','리오더 및 전 재고 품절'],['통합 조회수 130만 회','협업 채널 팔로워 합계 227만'],['유튜브 6개 채널 협업','고정 댓글·본문 링크로 구매 유입']]},
+{k:'rd',n:3,org:'엠앤아이',t:'랜돌프앤코 26SS 룩북 촬영 PM',when:'2025.09 – 2025.11',c:'100%',
+s:'랜돌프앤코 26SS 룩북 촬영 PM. ‘THE TIFFANY LIGHT’ 컨셉 기획부터 모델 섭외, 현장 진행, 보정·납품까지 전 과정을 담당했습니다.',
+p:['시즌 컬러 티파니 민트와 가을 촬영의 무드를 하나로 묶어야 했음','남녀 모델·룩별 스타일링·공간 이동을 하루에 소화해야 했음','셀렉·보정·공유 단계가 길어 납품 일정 관리가 필요했음'],
+so:['피오르에서 착안한 컨셉·무드보드, 컷별 레퍼런스 정리','룩별 스타일링 보드, 20분 단위 촬영 스케줄과 동선 설계','1·2차 보정본 단계별 공유 후 최종 납품'],
+r:[['1일 촬영 12컷 완료','남녀 모델 2인 · 스튜디오 3개 공간'],['컨셉 기획안 확정','1·2차 기획안 공유 후 최종 확정'],['시즌 룩북 최종 납품','단계별 피드백 반영']]},
+{k:'ck',n:4,org:'엠앤아이',t:'찰스앤키스 인플루언서 엠버서더 프로그램',when:'2025.07 – 2025.12',c:'90%',
+s:'브랜드 무드에 맞는 인플루언서를 선별해 엠버서더 프로그램으로 운영한 캠페인. 단발성 협찬이 아닌 정기 협업으로 노출을 이어갔습니다.',
+p:['글로벌 인지도에 비해 국내에서는 ‘가성비 브랜드’ 인식이 강했음','단발성 협찬만으로는 브랜드 메시지가 꾸준히 전달되지 않았음','브랜드가 지향하는 국내 비주얼이 부족했음'],
+so:['성별·연령별로 분류해 브랜드 무드에 맞는 인원 선별','정기 엠버서더 운영 + 패션 매거진 3개월 월간 포스팅','엠버서더와 시즌 룩북 촬영, 공식 계정·광고 소재로 제공'],
+r:[['사진 게시물 20건','6개월간 꾸준한 노출'],['2030 여성 타깃 노출','정기 매거진·룩북으로 트렌디한 이미지'],['룩북 비주얼 확보','공식 계정·광고 소재 활용']]},
+{k:'cb',n:4,org:'엠앤아이',t:'캠브리지 멤버스 브랜드 리뉴얼 행사',when:'2025.05 – 2025.06',c:'90%',
+s:'캠브리지 멤버스의 브랜드 리뉴얼을 기념한 잠실 롯데백화점 오프라인 행사. MTM 서비스와 새 BI·SI를 처음 공개하는 자리로, 인플루언서·유튜버 섭외와 콘텐츠 운영, 현장 응대를 담당했습니다.',
+p:['기존 콘텐츠가 반복되어 리뉴얼 소식이 새롭게 전달되지 않았음','사전 맞춤이 필요한 MTM 특성상 현장 방문까지 이끌어야 했음','오프라인 중심 구조라 온라인으로 넓힐 방법이 필요했음'],
+so:['개인 네트워크로 브랜드에 맞는 패션 인플루언서·유튜버 섭외','MTM 체험·리뉴얼 메시지가 담기도록 가이드, 방문 일정 협의','업로드 일정을 나눠 운영하고 콘텐츠별 조회수 모니터링'],
+r:[['매출 30% 성장','리뉴얼 행사 + 콘텐츠 운영 결과'],['최대 조회수 13만 회','인플루언서 콘텐츠 단일 기준'],['리뉴얼 메시지 전달','새 BI·SI와 MTM 함께 노출']]},
+{k:'bb',n:4,org:'태에이전시',t:'바버(Barbour) 130주년 수원 스타필드 팝업',when:'2024.10 – 2025.03',c:'40%',
+s:'바버 130주년을 맞아 수원 스타필드에서 진행한 오프라인 팝업. 서울 권역이 아닌 지역 행사였지만 인플루언서 방문과 콘텐츠 업로드를 이끌어 오프라인 방문 증가에 기여했습니다.',
+p:['서울 주요 상권이 아닌 수원 팝업이라 자연 유입이 제한적이었음','헤리티지를 직접 경험한 방문이 온라인 콘텐츠로 이어져야 했음','짧은 기간 안에 디지털 노출과 현장 방문을 함께 늘려야 했음'],
+so:['브랜드에 맞는 패션 인플루언서 + 수원·경기 남부 로컬 크리에이터 섭외','방문 인플루언서 대상 브랜드 스토리·라인업 브리핑, 촬영 지원','방문 당일 업로드 원칙으로 노출 공백 최소화'],
+r:[['인플루언서 50명 섭외','130주년 헤리티지 전달'],['섭외 예산 절반 절감','개인 네트워크 활용'],['오프라인 방문 유도','실시간 업로드를 보고 방문하는 고객 증가']]},
+{k:'ng',n:2,org:'더네이쳐홀딩스',t:'내셔널지오그래픽 공식 인스타그램 콘텐츠 기획·운영',when:'2025.03',c:'90%',
+s:'시즌 비주얼을 바탕으로 브랜드의 탐험 정신과 일상 속 활용성 사이의 균형을 담은 피드·릴스 콘텐츠를 기획·제작하고 카피라이팅을 진행했습니다.',
+p:['시즌 비주얼을 SNS 포맷에 맞게 풀어낼 운영 방향이 필요했음','스테디셀러 백팩의 신학기 수요를 콘텐츠로 끌어내야 했음','탐험 정신과 일상 활용성을 함께 보여줘야 했음'],
+so:['시즌 비주얼 선별 및 포맷별 운영 방향 수립','트렌드와 브랜드 아이덴티티를 결합한 카피라이팅','포토크루·가족 캠핑 등 캠페인형 콘텐츠 기획'],
+r:[['릴스 최대 101.2만 회','단일 콘텐츠 기준'],['백팩 검색량 3배','백팩 카테고리 온라인 검색량'],['매장 매출 1.5배','백팩 카테고리 매장 매출']]},
+{k:'fn',n:4,org:'시원아이웨어',t:'포나인즈(999.9) 거점 안경원 기획',when:'2022.10 – 2023.09',c:'90%',
+s:'포나인즈의 입지·매출·서비스를 분석해 거점 안경원을 선정하고 B2C·B2B 운영 관리를 기획했습니다. 엠버서더 프로그램과 본사 견학 프로그램으로 브랜드 충성도를 높였습니다.',
+p:['브랜드 콘텐츠가 부족해 소비자와의 소통이 원활하지 않았음','국내 시장에서 브랜드 인지도를 높일 방법이 필요했음','오프라인 매출을 늘릴 새로운 접근이 필요했음'],
+so:['패션 인플루언서·거점 안경원 대표를 엠버서더로 선정해 콘텐츠 제작','주요 도시 거점 안경원 5곳 선정, VMD 기획','네이버 바이럴·파워링크·SEM 키워드 운영'],
+r:[['매출 3배 성장','거점 안경원 협업·엠버서더 콘텐츠 운영'],['콘텐츠 5,000건','인플루언서·블로거 협업 누적'],['취급 매장 1.5배','거점 안경원 운영 이후']]},
+{k:'sil',n:3,org:'시원아이웨어',t:'실루엣 아이웨어 ‘졸업사진’ 화보 기획',when:'2023.05 – 2023.06',c:'100%',
+s:'글로벌 브랜드 실루엣 아이웨어의 화보를 패션 인플루언서와 함께 단독 기획·제작하고, 화보 컨셉을 반영한 팝업 행사로 이어갔습니다.',
+p:['사내 인력이 부족해 화보 전 과정을 혼자 진행해야 했음','무테 안경의 특징을 화보 이미지로 보여주기 어려웠음','업계 평균보다 낮은 예산'],
+so:['렌즈 모양을 자유롭게 바꾸는 무테의 특징을 컨셉으로 설정','‘졸업사진’ 컨셉으로 꿈을 이루는 스토리라인 기획','의류 브랜드 협업 제안으로 모델 의상 풀세트 협찬'],
+r:[['매출 3배 성장','화보·오프라인 행사 연계, 전년 대비'],['브랜드 검색량 3배','화보·인플루언서 협업 이후'],['신규 거래처 34곳','자이스비전센터 트렁크쇼']]},
+{k:'ys',n:2,org:'시원아이웨어',t:'Y’s 아이웨어 인플루언서 시딩',when:'2023.12',c:'90%',
+s:'성별·연령별 타기팅으로 인플루언서를 선별해 아이웨어 시딩 캠페인을 진행하고, 사진·릴스 게시물 40건을 발행했습니다.',
+p:['브랜드 인지도를 높일 자체 콘텐츠가 부족했음','면세점을 포함한 오프라인 매출이 정체돼 있었음','계약 종료가 결정돼 남은 기간의 전략 재정비가 필요했음'],
+so:['패션·다양한 연령대 인플루언서로 사진·릴스 40건 발행','전국 면세점 세일즈 노출 강화, 안경원 입점 확대','제품 반환 조건 설정으로 마케팅 비용 최적화'],
+r:[['평균 좋아요 850개','최고 1,698개'],['평균 도달 13,000명','최고 82,000명'],['마케팅 비용 절감','제품 반환 조건으로 예산 효율 확보']]}
+];
+const ORGS=['전체','엠앤아이','더네이쳐홀딩스','태에이전시','시원아이웨어'];
+const fl=document.getElementById('filters'),pl=document.getElementById('plist');
+function render(f){
+ const L=P.filter(x=>f==='전체'||x.org===f);
+ document.getElementById('pcount').textContent=L.length+'건';
+ pl.innerHTML=L.map(x=>`<article class="proj">
+ <div class="proj-head"><div><h3>${x.t}</h3><div class="meta">${x.when} · ${x.org} · 기여도 ${x.c}</div></div><span class="tag">${x.org}</span></div>
+ <div class="gallery" style="--n:${x.n}">${Array.from({length:x.n},(_,i)=>`<img loading="lazy" src="img/${x.k}${i+1}.jpg" alt="${x.t} 이미지 ${i+1}">`).join('')}</div>
+ <p class="summary">${x.s}</p>
+ <div class="psr"><div><h4>문제 인식</h4><ul>${x.p.map(v=>`<li>${v}</li>`).join('')}</ul></div>
+ <div><h4>해결 방안</h4><ul>${x.so.map(v=>`<li>${v}</li>`).join('')}</ul></div>
+ <div class="res"><h4>성과</h4><ul>${x.r.map(v=>`<li><strong>${v[0]}</strong>${v[1]}</li>`).join('')}</ul></div></div>
+ </article>`).join('');
+ [...fl.children].forEach(b=>b.classList.toggle('on',b.textContent===f));
+}
+fl.innerHTML=ORGS.map(o=>`<button type="button">${o}</button>`).join('');
+fl.onclick=e=>{if(e.target.tagName==='BUTTON')render(e.target.textContent)};
+render('전체');
+</script>
+</body>
+</html>
