@@ -55,9 +55,9 @@ h2 small{font-size:14px;font-weight:500;color:var(--sub)}
 .meta{font-size:13px;color:var(--sub);margin-top:6px}
 .tag{font-size:12px;border:1px solid var(--ink);padding:3px 10px;white-space:nowrap;justify-self:start}
 .gallery{display:grid;grid-template-columns:repeat(var(--n,4),1fr);gap:8px;margin-bottom:24px}
-.gallery img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block;background:var(--soft)}
+.gallery img{width:100%;aspect-ratio:var(--ar,4/5);object-fit:cover;display:block;background:var(--soft)}
 .summary{font-size:16px;color:#222;max-width:820px}
-.psr{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:24px}
+.psr{display:grid;grid-template-columns:repeat(var(--c,3),1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:24px}
 .psr div{background:#fff;padding:20px}
 .psr h4{font-size:12px;letter-spacing:.1em;color:var(--sub);margin-bottom:10px;font-weight:600}
 .psr p,.psr li{font-size:14px;color:#222}
@@ -87,7 +87,7 @@ footer{padding:28px 0;font-size:13px;color:var(--sub)}
 </style>
 </head>
 <body>
-<nav><div class="wrap"><span class="logo">BAE GISU</span>
+<nav><div class="wrap"><span class="logo">BAE KI SOO</span>
 <ul><li><a href="#about">About</a></li><li><a href="#career">Career</a></li><li><a href="#projects">Projects</a></li><li><a href="#contact">Contact</a></li></ul></div></nav>
 
 <header class="hero" id="about"><div class="wrap grid">
@@ -141,7 +141,7 @@ footer{padding:28px 0;font-size:13px;color:var(--sub)}
 <a class="btn" href="https://www.instagram.com/mynameisbaekisoo" target="_blank" rel="noopener">Instagram @mynameisbaekisoo</a>
 </div>
 </div></section>
-<footer><div class="wrap">© 2026 Bae Gisu</div></footer>
+<footer><div class="wrap">© 2026 BAE KI SOO</div></footer>
 
 <script>
 const P=[
@@ -150,6 +150,11 @@ s:'코오롱FnC 시리즈 26FW 에어트루퍼·체크셔츠·로우하이드·�
 p:['네 개 라인을 한 시즌 안에 각기 다른 무드로 알려야 했음','기존 팔로워 노출만으로는 신규 고객에게 닿기 어려웠음','조회수만으로는 구매 고려 반응을 판단하기 어려웠음'],
 so:['라인별 인플루언서 선정, 8~10월 공개 시점 분산','릴스·유튜브 숏츠 비중을 높여 비팔로워 도달 확대','크리에이터별 인사이트(저장·공유·유입 검색어) 수령 후 리포트화'],
 r:[['총 조회수 120만 회','콘텐츠 72건 · 참여율 2.6%'],['릴스 비팔로워 조회 56%','피드 평균 33% 대비 높은 신규 도달'],['저장 1,255 · 공유 772','숏츠 유입 검색어 1위 ‘에어트루퍼’']]},
+{k:'hc',n:3,org:'엠앤아이',t:'헨리코튼 26SS 바이럴 캠페인',when:'2026.02 – 2026.06',c:'100%',
+s:'IG·네이버 블로그·유튜브를 묶은 통합 바이럴로 26SS 시즌 인지도를 넓힌 캠페인. 리플리 니트 등 시즌 신상의 인플루언서 협업 콘텐츠를 기획·운영했습니다.',
+p:['신상은 많았지만 채널마다 소비 방식이 달라 같은 소재로는 반응이 흩어졌음','검색 단계에서의 노출 설계가 함께 필요했음'],
+so:['IG는 릴스·피드 비주얼, 블로그는 키워드 상위 노출, 유튜브는 실착·리뷰 중심으로 포맷 분리','피셔맨 쇼츠 다운파카·울 부클 패디드 피코트 등 시즌 아이템을 반복 노출해 구매로 연결','키워드 노출 관리 및 성과 리포트 작성'],
+r:[['누적 판매율 85.7%','울 부클 패디드 피코트'],['IG 조회 6.4만 회 이상','협업 계정 누적 팔로워 약 65만'],['네이버 키워드 탭뷰 10위 이내','주요 키워드 다수 확보']]},
 {k:'gto',n:4,org:'엠앤아이',t:'시리즈 × GTO IP 협업 PR 캠페인 (성수 팝업)',when:'2026.03 – 2026.05',c:'100%',
 s:'코오롱FnC 시리즈와 일본 IP ‘GTO’ 협업 PR 캠페인 집행 대행. 매체·인플루언서 선정, 공개 일정 조율, 셀럽 캐스팅, RSG 성수 팝업 현장 운영을 담당했습니다.',
 p:['GTO 협업 제품 중 어떤 품목을 PR 대상으로 내세울지 정해야 했음','애니·바이크·패션 커뮤니티를 한 캠페인에서 동시에 공략해야 했음','팝업 방문이 다시 SNS 콘텐츠로 이어질 장치가 필요했음'],
@@ -190,11 +195,36 @@ s:'시즌 비주얼을 바탕으로 브랜드의 탐험 정신과 일상 속 활
 p:['시즌 비주얼을 SNS 포맷에 맞게 풀어낼 운영 방향이 필요했음','스테디셀러 백팩의 신학기 수요를 콘텐츠로 끌어내야 했음','탐험 정신과 일상 활용성을 함께 보여줘야 했음'],
 so:['시즌 비주얼 선별 및 포맷별 운영 방향 수립','트렌드와 브랜드 아이덴티티를 결합한 카피라이팅','포토크루·가족 캠핑 등 캠페인형 콘텐츠 기획'],
 r:[['릴스 최대 101.2만 회','단일 콘텐츠 기준'],['백팩 검색량 3배','백팩 카테고리 온라인 검색량'],['매장 매출 1.5배','백팩 카테고리 매장 매출']]},
+{k:'vt',im:['vt2','vt3'],org:'태에이전시',t:'보타(VOTTA) 인플루언서 PR 캠페인',when:'2024.05 – 2024.06',
+s:'양말 브랜드 보타의 인플루언서 협찬 캠페인과 오프라인 행사 기획. 경쟁사·트렌드 분석부터 콘텐츠 디렉팅, 인플루언서 섭외까지 맡았습니다.',
+ro:['경쟁사·트렌드 분석','인플루언서 PR 전략 수립 및 콘텐츠 디렉팅','행사 기획 (스토리텔링, VMD)','인플루언서 섭외·관리, 고객 반응 데이터 정리'],
+r:[['평균 좋아요 326','최고 1,431'],['댓글 참여율 20%','2024.05.15 – 06.07 집행분']]},
+{k:'sim',im:['sim2','sim3'],org:'개인 프로젝트',t:'네트워킹 마켓 ‘SIM터’ 기획·운영',when:'2024.05 – 2024.06',
+s:'인플루언서와 브랜드가 각각 호스트가 되어 마켓을 중심으로 함께 즐기는 네트워킹 행사. 셀러로 참여하면서 지인의 첫 오프라인 행사 기획, 스태프 모집, 홍보, 인플루언서 초대까지 주도했습니다.',
+ro:['행사 기획 및 스태프 섭외','인플루언서 PR 전략 수립','인플루언서 섭외·관리'],
+hl:'판매만 하는 장소가 아니라 사람들이 머물고 싶은 공간을 만드는 데 집중했습니다.',
+r:[['방문객 약 270명','첫 오프라인 행사']]},
+{k:'tr2',n:3,org:'시원아이웨어',t:'실루엣 트렁크쇼 (2) ‘우주’',when:'2024.03 – 2024.04',
+s:'파피루스 안경원과 진행한 실루엣 아이웨어의 두 번째 트렁크쇼. 장소를 고를 수 없는 작은 공간에서 ‘우주’ 컨셉으로 2일간 쇼를 기획·운영했습니다.',
+p:['영업 이슈로 장소를 고를 권한이 없었음','작은 공간에서 방문객이 머물 장치가 필요했음'],
+so:['‘기술은 무한해도 오리지널 안경의 가치는 영원하다’는 의미의 우주 컨셉','가디언즈 오브 갤럭시의 카세트에서 착안한 MP3·헤드셋 디스플레이','홍보 포스터, VMD 소품, 인플루언서·스태프 섭외'],
+r:[['신규 거래처 16곳','2일 운영'],['영업 이익 40% 증가','긱시크 트렌드 주도'],['매출 200%','입사 이후 대비']]},
+{k:'js',n:3,org:'시원아이웨어',t:'질스튜어트 아이웨어 브랜디드 화보·필름',when:'2023.12 – 2024.01',
+s:'질스튜어트가 원한 ‘뉴욕의 감성’을 살린 브랜디드 화보와 브랜드 필름을 기획하고 촬영했습니다.',
+hl:'뉴욕 유학생, 이민자 직장인, 카페 사장. 세 인물의 일상에 선글라스를 자연스럽게 녹인 페르소나 화보로 풀었습니다.',
+ro:['화보·브랜드 필름 컨셉 기획, 필름 스토리 작성','모델·스태프·장소 섭외','촬영 진행 및 보조','질스튜어트 영업부 커뮤니케이션']},
 {k:'fn',n:4,org:'시원아이웨어',t:'포나인즈(999.9) 거점 안경원 기획',when:'2022.10 – 2023.09',c:'90%',
 s:'포나인즈의 입지·매출·서비스를 분석해 거점 안경원을 선정하고 B2C·B2B 운영 관리를 기획했습니다. 엠버서더 프로그램과 본사 견학 프로그램으로 브랜드 충성도를 높였습니다.',
 p:['브랜드 콘텐츠가 부족해 소비자와의 소통이 원활하지 않았음','국내 시장에서 브랜드 인지도를 높일 방법이 필요했음','오프라인 매출을 늘릴 새로운 접근이 필요했음'],
 so:['패션 인플루언서·거점 안경원 대표를 엠버서더로 선정해 콘텐츠 제작','주요 도시 거점 안경원 5곳 선정, VMD 기획','네이버 바이럴·파워링크·SEM 키워드 운영'],
 r:[['매출 3배 성장','거점 안경원 협업·엠버서더 콘텐츠 운영'],['콘텐츠 5,000건','인플루언서·블로거 협업 누적'],['취급 매장 1.5배','거점 안경원 운영 이후']]},
+{k:'fj',n:3,org:'시원아이웨어',t:'포나인즈(999.9) 일본 본사 콘텐츠 출장',when:'2023.10',
+s:'포나인즈 본사 초청으로 크리에이터 노연홍 님과 도쿄에 다녀왔습니다. 국내 소비자가 브랜드를 이해할 수 있는 콘텐츠를 만들기 위해 4일간 도쿄·시부야·긴자에서 촬영했습니다.',
+ro:['콘텐츠 기획','콘텐츠 촬영 및 제작']},
+{k:'tr1',n:2,a:'4/3',org:'시원아이웨어',t:'실루엣 트렁크쇼 (1) ‘졸업사진’',when:'2023.06 – 2023.07',
+s:'실루엣 아이웨어의 ‘졸업사진’ 컨셉 트렁크쇼. 자이스비전센터와 협업해 5일간 오프라인 쇼를 기획·진행하고, 분야별 인플루언서를 초대해 브랜드 가치를 전했습니다.',
+ro:['트렁크쇼 컨셉 기획 및 화보 촬영','3D 홍보물·졸업앨범 기획 및 제작','인플루언서 초대 및 현장 운영'],
+r:[['신규 거래처 8곳','5일 운영'],['전월 대비 매출 120%','트렁크쇼 기간']]},
 {k:'sil',n:3,org:'시원아이웨어',t:'실루엣 아이웨어 ‘졸업사진’ 화보 기획',when:'2023.05 – 2023.06',c:'100%',
 s:'글로벌 브랜드 실루엣 아이웨어의 화보를 패션 인플루언서와 함께 단독 기획·제작하고, 화보 컨셉을 반영한 팝업 행사로 이어갔습니다.',
 p:['사내 인력이 부족해 화보 전 과정을 혼자 진행해야 했음','무테 안경의 특징을 화보 이미지로 보여주기 어려웠음','업계 평균보다 낮은 예산'],
@@ -204,21 +234,42 @@ r:[['매출 3배 성장','화보·오프라인 행사 연계, 전년 대비'],['
 s:'성별·연령별 타기팅으로 인플루언서를 선별해 아이웨어 시딩 캠페인을 진행하고, 사진·릴스 게시물 40건을 발행했습니다.',
 p:['브랜드 인지도를 높일 자체 콘텐츠가 부족했음','면세점을 포함한 오프라인 매출이 정체돼 있었음','계약 종료가 결정돼 남은 기간의 전략 재정비가 필요했음'],
 so:['패션·다양한 연령대 인플루언서로 사진·릴스 40건 발행','전국 면세점 세일즈 노출 강화, 안경원 입점 확대','제품 반환 조건 설정으로 마케팅 비용 최적화'],
-r:[['평균 좋아요 850개','최고 1,698개'],['평균 도달 13,000명','최고 82,000명'],['마케팅 비용 절감','제품 반환 조건으로 예산 효율 확보']]}
+r:[['평균 좋아요 850개','최고 1,698개'],['평균 도달 13,000명','최고 82,000명'],['마케팅 비용 절감','제품 반환 조건으로 예산 효율 확보']]},
+{k:'hb',n:2,org:'시원아이웨어',t:'아이웨어 화보 컨셉 기획·촬영',when:'2022 – 2024',
+s:'실루엣 ‘카멜레온’, 도르만 ‘LADIES, NO MORE CONTACT LENSES’, 실루엣 ‘졸업앨범’, 니로 ‘너와 난’, ByWp ‘애니원’ 등 브랜드별 화보 컨셉을 기획하고 촬영을 진행했습니다.',
+hl:'‘카멜레온’은 안경 착용에 대한 여성들의 부정적 인식을 바꾸는 게 목표였습니다. 오피스룩과 함께 안경의 매력과 실용성을 텍스트보다 이미지로 보여주는 데 집중했습니다.',
+ro:['화보 컨셉 기획','모델·스태프 섭외 및 관리','촬영 진행 및 보조 (모델로도 참여)']},
+{k:'cc',n:2,a:'4/3',org:'시원아이웨어',t:'제품 컨셉컷 기획·촬영',when:'2022 – 2024',
+s:'Y’s, 제냐(ZEGNA), ByWp, 도르만, 스틸브라운의 제품 컨셉컷을 기획하고 촬영을 진행했습니다. 면세점·브랜드 측 커뮤니케이션도 맡았습니다.',
+ro:['제품 컨셉컷 기획','촬영 진행','면세점·브랜드 커뮤니케이션']},
+{k:'ct',n:2,a:'4/3',org:'시원아이웨어',t:'제품 카탈로그 기획',when:'2022 – 2024',
+s:'스틸브라운, ByWp, 도르만 카탈로그의 레이아웃을 구상하고 섹션별 내용을 정리했습니다. 스틸브라운은 원고 작성과 편집까지 맡았습니다.',
+ro:['카탈로그 레이아웃 구상','섹션별 내용 기획·정리','원고 작성, 편집, 검토','촬영 진행 및 보조']},
+{k:'ip',n:3,a:'4/3',org:'시원아이웨어',t:'아이웨어 7개 브랜드 인플루언서 PR',when:'2022 – 2024',
+s:'Y’s(2회), 질스튜어트, 니로, 실루엣(3회), ByWp, 포나인즈 등 7개 브랜드의 인플루언서 PR을 운영했습니다.',
+ro:['경쟁사·트렌드 분석, PR 전략 수립','행사 기획 (스토리텔링, VMD)','인플루언서 섭외·관리','콘텐츠 품질 관리, 성과 측정 및 인사이트 정리']},
+{k:'plz',n:2,org:'개인 프로젝트',t:'스트릿 브랜드 ‘PLZ SMILE’ 런칭',when:'2021.09 – 2022.01',
+s:'대학교 4학년 때 ‘세상 모든 사람이 웃길 바라는 마음’을 담아 동기들과 만든 브랜드. 티셔츠 4종, 비니 4종, 머그컵 2종을 만들었습니다.',
+ro:['브랜드 스토리 기획','인플루언서 시딩 및 촬영']}
 ];
-const ORGS=['전체','엠앤아이','더네이쳐홀딩스','태에이전시','시원아이웨어'];
+const ORGS=['전체','엠앤아이','더네이쳐홀딩스','태에이전시','시원아이웨어','개인 프로젝트'];
 const fl=document.getElementById('filters'),pl=document.getElementById('plist');
 function render(f){
  const L=P.filter(x=>f==='전체'||x.org===f);
  document.getElementById('pcount').textContent=L.length+'건';
- pl.innerHTML=L.map(x=>`<article class="proj">
- <div class="proj-head"><div><h3>${x.t}</h3><div class="meta">${x.when} · ${x.org} · 기여도 ${x.c}</div></div><span class="tag">${x.org}</span></div>
- <div class="gallery" style="--n:${x.n}">${Array.from({length:x.n},(_,i)=>`<img loading="lazy" src="img/${x.k}${i+1}.jpg" alt="${x.t} 이미지 ${i+1}">`).join('')}</div>
+ pl.innerHTML=L.map(x=>{const ims=x.im||Array.from({length:x.n},(_,i)=>x.k+(i+1));
+ const li=a=>a.map(v=>`<li>${v}</li>`).join('');const B=[];
+ if(x.p)B.push(`<div><h4>문제 인식</h4><ul>${li(x.p)}</ul></div>`);
+ if(x.so)B.push(`<div><h4>해결 방안</h4><ul>${li(x.so)}</ul></div>`);
+ if(x.hl)B.push(`<div><h4>기획 포인트</h4><p>${x.hl}</p></div>`);
+ if(x.ro)B.push(`<div><h4>주요 역할</h4><ul>${li(x.ro)}</ul></div>`);
+ if(x.r)B.push(`<div class="res"><h4>성과</h4><ul>${x.r.map(v=>`<li><strong>${v[0]}</strong>${v[1]}</li>`).join('')}</ul></div>`);
+ return `<article class="proj">
+ <div class="proj-head"><div><h3>${x.t}</h3><div class="meta">${x.when} · ${x.org}${x.c?' · 기여도 '+x.c:''}</div></div><span class="tag">${x.org}</span></div>
+ <div class="gallery" style="--n:${x.a?Math.max(ims.length,2):Math.max(ims.length,3)};--ar:${x.a||'4/5'}">${ims.map((m,i)=>`<img loading="lazy" src="img/${m}.jpg" alt="${x.t} 이미지 ${i+1}">`).join('')}</div>
  <p class="summary">${x.s}</p>
- <div class="psr"><div><h4>문제 인식</h4><ul>${x.p.map(v=>`<li>${v}</li>`).join('')}</ul></div>
- <div><h4>해결 방안</h4><ul>${x.so.map(v=>`<li>${v}</li>`).join('')}</ul></div>
- <div class="res"><h4>성과</h4><ul>${x.r.map(v=>`<li><strong>${v[0]}</strong>${v[1]}</li>`).join('')}</ul></div></div>
- </article>`).join('');
+ <div class="psr" style="--c:${B.length}">${B.join('')}</div>
+ </article>`}).join('');
  [...fl.children].forEach(b=>b.classList.toggle('on',b.textContent===f));
 }
 fl.innerHTML=ORGS.map(o=>`<button type="button">${o}</button>`).join('');
