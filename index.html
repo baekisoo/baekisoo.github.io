@@ -4,277 +4,314 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>배기수 | Brand Marketer Portfolio</title>
-<meta name="description" content="인하우스·에이전시·크리에이터 경험을 갖춘 4년차 브랜드 마케터 배기수의 포트폴리오">
+<meta name="description" content="사람과 매체, 그리고 시기로 성과를 만드는 4년차 브랜드 마케터 배기수의 포트폴리오">
 <meta property="og:title" content="배기수 | Brand Marketer Portfolio">
-<meta property="og:description" content="인하우스·에이전시·크리에이터 경험을 갖춘 4년차 브랜드 마케터">
-<meta property="og:image" content="img/gto1.jpg">
+<meta property="og:description" content="인하우스·에이전시·크리에이터를 거친 4년차 브랜드 마케터. 시리즈 × GTO 팝업 방문객 1만 명, 에어트루퍼 판매 300%.">
+<meta property="og:image" content="img/gto_1.jpg">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
 <style>
-:root{--ink:#111;--sub:#666;--line:#e5e5e5;--bg:#fff;--soft:#f6f6f6}
+:root{--ink:#0a0a0a;--sub:#6b6b6b;--line:#e4e4e4;--soft:#f4f4f2;--bg:#fff;--w:1240px}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:Pretendard,-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;color:var(--ink);background:var(--bg);line-height:1.65;word-break:keep-all;-webkit-font-smoothing:antialiased}
-a{color:inherit}
-.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
-nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
-nav .wrap{display:flex;justify-content:space-between;align-items:center;height:56px}
-nav .logo{font-weight:800;letter-spacing:-.01em}
-nav ul{display:flex;gap:22px;list-style:none;font-size:14px}
-nav a{text-decoration:none;color:var(--sub)}nav a:hover{color:var(--ink)}
-.hero{padding:88px 0 64px;border-bottom:1px solid var(--line)}
-.hero .grid{display:grid;grid-template-columns:1.5fr 1fr;gap:48px;align-items:end}
-.eyebrow{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--sub);margin-bottom:18px}
-.hero h1{font-size:clamp(34px,5vw,56px);line-height:1.18;font-weight:800;letter-spacing:-.02em}
-.hero p.lead{margin-top:24px;font-size:17px;color:#333;max-width:620px}
-.hero img{width:100%;max-width:300px;aspect-ratio:4/5;object-fit:cover;display:block;margin-left:auto;filter:grayscale(1)}
-.links{display:flex;gap:10px;margin-top:28px;flex-wrap:wrap}
-.btn{display:inline-block;padding:10px 18px;border:1px solid var(--ink);font-size:14px;font-weight:600;text-decoration:none}
+body{font-family:Pretendard,-apple-system,"Apple SD Gothic Neo",sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;letter-spacing:-.01em;-webkit-font-smoothing:antialiased;word-break:keep-all}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.wrap{max-width:var(--w);margin:0 auto;padding:0 32px}
+/* nav */
+nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-weight:800;font-size:15px;letter-spacing:.02em}
+nav ul{display:flex;gap:28px;list-style:none;font-size:14px;align-items:center}
+nav ul a{color:var(--sub);transition:color .2s}nav ul a:hover{color:var(--ink)}
+.pdf{border:1px solid var(--ink);padding:6px 12px;color:var(--ink)!important;font-weight:600}
+/* hero */
+.hero{padding:96px 0 72px}
+.hero .wrap{display:grid;grid-template-columns:1.5fr 1fr;gap:64px;align-items:end}
+.eyebrow{font-size:13px;color:var(--sub);margin-bottom:24px;font-weight:500}
+.hero h1{font-size:clamp(36px,5.2vw,68px);line-height:1.15;font-weight:800;letter-spacing:-.035em}
+.hero .lead{margin-top:28px;font-size:17px;color:#333;max-width:560px}
+.hero figure img{width:100%;aspect-ratio:4/5;object-fit:cover;filter:grayscale(1)}
+.hero figure figcaption{font-size:12px;color:var(--sub);margin-top:10px}
+.btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:36px}
+.btn{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--ink);padding:12px 20px;font-size:14px;font-weight:600;transition:all .2s}
 .btn.fill{background:var(--ink);color:#fff}
-.stats{display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid var(--line)}
-.stat{padding:36px 24px;border-right:1px solid var(--line)}.stat:last-child{border-right:0}
-.stat b{display:block;font-size:34px;font-weight:800;letter-spacing:-.02em}
-.stat span{font-size:14px;color:var(--sub)}
-section{padding:80px 0;border-bottom:1px solid var(--line)}
-h2{font-size:30px;font-weight:800;letter-spacing:-.02em;margin-bottom:36px;display:flex;align-items:baseline;gap:14px}
-h2 small{font-size:14px;font-weight:500;color:var(--sub)}
-.career{display:grid;gap:0}
-.job{display:grid;grid-template-columns:180px 1fr;gap:24px;padding:24px 0;border-top:1px solid var(--line)}
-.job:last-child{border-bottom:1px solid var(--line)}
-.job .when{font-size:14px;color:var(--sub);font-variant-numeric:tabular-nums}
-.job h3{font-size:19px;font-weight:700}
-.job h3 em{font-style:normal;font-weight:500;color:var(--sub);font-size:15px;margin-left:8px}
-.job p{margin-top:6px;color:#333;font-size:15px}
-.job ul{margin-top:8px;padding-left:18px;font-size:15px;color:#333}
-.filters{display:flex;gap:8px;flex-wrap:wrap;margin:-12px 0 32px}
-.filters button{font:inherit;font-size:13px;padding:7px 14px;border:1px solid var(--line);background:#fff;cursor:pointer}
-.filters button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
-.proj{padding:44px 0;border-top:1px solid var(--line)}
-.proj:first-of-type{border-top:0;padding-top:0}
-.proj-head{display:grid;grid-template-columns:1fr auto;gap:16px;align-items:end;margin-bottom:20px}
-.proj-head h3{font-size:24px;font-weight:800;letter-spacing:-.01em;line-height:1.3}
-.meta{font-size:13px;color:var(--sub);margin-top:6px}
-.tag{font-size:12px;border:1px solid var(--ink);padding:3px 10px;white-space:nowrap;justify-self:start}
-.gallery{display:grid;grid-template-columns:repeat(var(--n,4),1fr);gap:8px;margin-bottom:24px}
-.gallery img{width:100%;aspect-ratio:var(--ar,4/5);object-fit:cover;display:block;background:var(--soft)}
-.summary{font-size:16px;color:#222;max-width:820px}
-.psr{display:grid;grid-template-columns:repeat(var(--c,3),1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:24px}
-.psr div{background:#fff;padding:20px}
-.psr h4{font-size:12px;letter-spacing:.1em;color:var(--sub);margin-bottom:10px;font-weight:600}
-.psr p,.psr li{font-size:14px;color:#222}
-.psr ul{padding-left:16px}
-.psr .res{background:var(--ink);color:#fff}
-.psr .res h4{color:#aaa}.psr .res li{color:#fff}
-.psr .res strong{display:block;font-size:20px;font-weight:800;margin-bottom:2px}
-.psr .res li{list-style:none;margin-bottom:12px}
-.psr .res ul{padding-left:0}
-.contact{text-align:left}
-.contact p{font-size:17px;color:#333;max-width:640px}
-footer{padding:28px 0;font-size:13px;color:var(--sub)}
-@media (max-width:820px){
- nav ul{display:none}
- .hero{padding:56px 0 44px}
- .hero .grid{grid-template-columns:1fr;gap:28px}
- .hero img{margin-left:0;max-width:200px}
- .stats{grid-template-columns:repeat(2,1fr)}
- .stat{border-bottom:1px solid var(--line)}
- .stat:nth-child(2n){border-right:0}
- .job{grid-template-columns:1fr;gap:4px}
- .gallery{grid-template-columns:repeat(2,1fr)}
- .psr{grid-template-columns:1fr}
- .proj-head{grid-template-columns:1fr}
- section{padding:56px 0}
+.btn:hover{background:var(--ink);color:#fff}.btn.fill:hover{background:#333}
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--ink);border-bottom:1px solid var(--line)}
+.stat{padding:28px 24px 28px 0}
+.stat+.stat{padding-left:24px;border-left:1px solid var(--line)}
+.stat b{display:block;font-size:clamp(28px,3.4vw,44px);font-weight:800;letter-spacing:-.03em;line-height:1.1}
+.stat span{font-size:13px;color:var(--sub)}
+/* sections */
+section{padding:96px 0}
+.sh{display:flex;align-items:baseline;justify-content:space-between;gap:24px;margin-bottom:40px;flex-wrap:wrap}
+.sh h2{font-size:clamp(26px,3vw,36px);font-weight:800;letter-spacing:-.03em}
+.sh p{color:var(--sub);font-size:14px}
+/* featured */
+.feat{display:grid;grid-template-columns:repeat(2,1fr);gap:56px 32px}
+.card{display:block;cursor:pointer}
+.card .ph{overflow:hidden;background:var(--soft);aspect-ratio:4/5}
+.feat .card:nth-child(1),.feat .card:nth-child(4){grid-column:span 2}
+.feat .card:nth-child(1) .ph,.feat .card:nth-child(4) .ph{aspect-ratio:16/9}
+.card .ph img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.card:hover .ph img{transform:scale(1.03)}
+.card .meta{display:flex;justify-content:space-between;gap:16px;margin-top:16px;font-size:13px;color:var(--sub)}
+.card h3{font-size:22px;font-weight:700;letter-spacing:-.02em;margin-top:6px;line-height:1.35}
+.card .hook{font-size:15px;color:#333;margin-top:6px}
+.card .kpi{display:flex;gap:24px;margin-top:14px;flex-wrap:wrap}
+.card .kpi div b{display:block;font-size:20px;font-weight:800;letter-spacing:-.02em}
+.card .kpi div span{font-size:12px;color:var(--sub)}
+.more-link{font-size:13px;font-weight:600;margin-top:14px;display:inline-block;border-bottom:1px solid var(--ink)}
+/* more work */
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px}
+.filters button{font:inherit;font-size:13px;background:none;border:1px solid var(--line);padding:8px 14px;cursor:pointer;color:var(--sub)}
+.filters button.on{border-color:var(--ink);background:var(--ink);color:#fff}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:40px 24px}
+.grid3 .card h3{font-size:18px}
+.grid3 .card .hook{font-size:14px}
+/* archive */
+.arch{border-top:1px solid var(--ink)}
+.arch a{display:grid;grid-template-columns:96px 1fr auto;gap:20px;align-items:center;padding:16px 0;border-bottom:1px solid var(--line)}
+.arch img{width:96px;height:72px;object-fit:cover;background:var(--soft)}
+.arch b{font-size:16px;font-weight:700;display:block}
+.arch span{font-size:13px;color:var(--sub)}
+.arch em{font-style:normal;font-size:12px;color:var(--sub)}
+/* about */
+.about{background:var(--ink);color:#fff}
+.about .sh p{color:#999}
+.abil{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#333;margin-bottom:64px}
+.abil div{background:var(--ink);padding:28px 24px 28px 0}
+.abil div+div{padding-left:24px}
+.abil b{font-size:36px;font-weight:800;letter-spacing:-.03em;display:block}
+.abil h4{font-size:15px;margin:6px 0 8px}
+.abil p{font-size:14px;color:#aaa}
+.jobs{border-top:1px solid #444}
+.job{display:grid;grid-template-columns:200px 1fr;gap:24px;padding:28px 0;border-bottom:1px solid #333}
+.job .when{font-size:14px;color:#999}
+.job h3{font-size:20px;font-weight:700}
+.job h3 em{font-style:normal;font-weight:400;color:#999;font-size:14px;margin-left:10px}
+.job p,.job li{font-size:14px;color:#ccc;margin-top:6px}
+.job ul{padding-left:16px}
+.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:56px}
+.skills h4{font-size:13px;color:#999;margin-bottom:10px;font-weight:500}
+.skills p{font-size:15px;color:#eee}
+/* contact */
+.contact h2{font-size:clamp(30px,4.4vw,56px);font-weight:800;letter-spacing:-.035em;line-height:1.2}
+.contact p{color:#333;margin-top:20px;max-width:620px}
+footer{border-top:1px solid var(--line);padding:28px 0;font-size:12px;color:var(--sub)}
+footer .wrap{display:flex;justify-content:space-between}
+/* case page */
+#case{display:none}
+body.case #home{display:none}body.case #case{display:block}
+.c-top{padding:56px 0 40px}
+.back{font-size:13px;color:var(--sub);display:inline-flex;gap:6px;margin-bottom:40px}
+.back:hover{color:var(--ink)}
+.c-cat{font-size:13px;color:var(--sub);margin-bottom:14px}
+.c-top h1{font-size:clamp(30px,4.6vw,56px);font-weight:800;letter-spacing:-.035em;line-height:1.18;max-width:980px}
+.c-top .hook{font-size:19px;color:#333;margin-top:18px;max-width:760px}
+.c-meta{display:grid;grid-template-columns:1fr 1fr 2fr .7fr;border-top:1px solid var(--ink);margin-top:48px}
+.c-meta div{padding:16px 16px 16px 0;border-bottom:1px solid var(--line)}
+.c-meta div+div{padding-left:16px;border-left:1px solid var(--line)}
+.c-meta small{display:block;font-size:12px;color:var(--sub);margin-bottom:4px}
+.c-meta span{font-size:14px;font-weight:600}
+.c-hero{background:var(--soft)}
+.c-hero img{width:100%;max-height:86vh;object-fit:cover}
+.c-key{display:grid;grid-template-columns:repeat(4,1fr);background:var(--ink);color:#fff}
+.c-key div{padding:32px 24px}
+.c-key div+div{border-left:1px solid #333}
+.c-key b{display:block;font-size:clamp(26px,3.2vw,42px);font-weight:800;letter-spacing:-.03em;line-height:1.15}
+.c-key span{font-size:13px;color:#aaa}
+.c-body{padding:80px 0 24px}
+.blk{display:grid;grid-template-columns:220px 1fr;gap:32px;padding:36px 0;border-top:1px solid var(--line)}
+.blk h2{font-size:14px;font-weight:700}
+.blk h2 small{display:block;font-size:12px;color:var(--sub);font-weight:400;margin-top:4px}
+.blk p{font-size:17px;color:#222;max-width:760px}
+.blk ol{list-style:none;counter-reset:s;max-width:820px}
+.blk ol li{counter-increment:s;position:relative;padding:12px 0 12px 44px;border-bottom:1px solid var(--line);font-size:16px}
+.blk ol li:last-child{border-bottom:0}
+.blk ol li::before{content:counter(s,decimal-leading-zero);position:absolute;left:0;top:13px;font-size:13px;font-weight:700;color:var(--sub)}
+.story{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);margin-top:24px;max-width:820px;border:1px solid var(--line)}
+.story div{background:#fff;padding:20px}
+.story b{font-size:15px;display:block;margin-bottom:4px}
+.story span{font-size:14px;color:#444}
+.chap{max-width:860px}
+.chap+.chap{margin-top:36px}
+.chap h3{font-size:18px;font-weight:700;margin-bottom:8px}
+.chap .mini{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);margin-top:16px}
+.chap .mini div{padding:14px}
+.chap .mini div+div{border-left:1px solid var(--line)}
+.chap .mini b{display:block;font-size:20px;font-weight:800;letter-spacing:-.02em}
+.chap .mini span{font-size:12px;color:var(--sub)}
+.learn{background:var(--soft);padding:28px 32px;max-width:820px;font-size:17px;border-left:3px solid var(--ink)}
+.gal{padding:24px 0 80px}
+.gal h2{font-size:14px;font-weight:700;margin-bottom:20px;display:flex;justify-content:space-between}
+.gal h2 span{color:var(--sub);font-weight:400}
+.mason{columns:3;column-gap:12px}
+.mason figure{break-inside:avoid;margin-bottom:12px;cursor:zoom-in;background:var(--soft)}
+.mason img,.mason video{width:100%;height:auto;display:block}
+.vids{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:12px}
+.vids video{width:100%;aspect-ratio:9/16;object-fit:cover;background:#000}
+.nextp{border-top:1px solid var(--ink);padding:40px 0 96px;display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.nextp a{display:block}
+.nextp small{font-size:12px;color:var(--sub)}
+.nextp b{display:block;font-size:20px;font-weight:700;margin-top:4px}
+.nextp a:last-child{text-align:right}
+/* lightbox */
+.lb{position:fixed;inset:0;background:rgba(10,10,10,.96);z-index:100;display:none;align-items:center;justify-content:center}
+.lb.on{display:flex}
+.lb img{max-width:92vw;max-height:88vh;object-fit:contain}
+.lb button{position:absolute;background:none;border:0;color:#fff;font-size:28px;cursor:pointer;padding:16px;font-family:inherit}
+.lb .x{top:12px;right:16px}.lb .pv{left:8px}.lb .nx{right:8px}
+.lb .cnt{position:absolute;bottom:20px;left:50%;transform:translateX(-50%);color:#999;font-size:13px}
+@media (max-width:900px){
+ .wrap{padding:0 20px}
+ nav ul{gap:16px}nav ul li.hide{display:none}
+ .hero{padding:56px 0 48px}
+ .hero .wrap{grid-template-columns:1fr;gap:36px}
+ .hero figure{max-width:240px}
+ .stats,.c-key{grid-template-columns:repeat(2,1fr)}
+ .stat:nth-child(3){padding-left:0;border-left:0}
+ .stat:nth-child(n+3){border-top:1px solid var(--line)}
+ .c-key div:nth-child(3){border-left:0}.c-key div:nth-child(n+3){border-top:1px solid #333}
+ section{padding:64px 0}
+ .feat,.grid3{grid-template-columns:1fr;gap:44px}
+ .feat .card:nth-child(1),.feat .card:nth-child(4){grid-column:auto}
+ .feat .card .ph{aspect-ratio:4/5!important}
+ .abil,.skills{grid-template-columns:1fr}
+ .abil div,.abil div+div{padding:24px 0}
+ .job{grid-template-columns:1fr;gap:6px}
+ .c-meta{grid-template-columns:1fr 1fr}
+ .c-meta div:nth-child(3){padding-left:0;border-left:0}
+ .blk{grid-template-columns:1fr;gap:12px}
+ .story,.chap .mini{grid-template-columns:1fr 1fr}
+ .chap .mini div:nth-child(3){border-left:0}.chap .mini div:nth-child(n+3){border-top:1px solid var(--line)}
+ .mason{columns:2}
+ .vids{grid-template-columns:repeat(2,1fr)}
+ .arch a{grid-template-columns:72px 1fr}.arch img{width:72px;height:56px}.arch em{display:none}
+ .nextp{grid-template-columns:1fr}.nextp a:last-child{text-align:left}
 }
 </style>
 </head>
 <body>
-<nav><div class="wrap"><span class="logo">BAE KI SOO</span>
-<ul><li><a href="#about">About</a></li><li><a href="#career">Career</a></li><li><a href="#projects">Projects</a></li><li><a href="#contact">Contact</a></li></ul></div></nav>
+<nav><div class="wrap"><a class="logo" href="#/">BAE KI SOO</a>
+<ul><li class="hide"><a href="#/" data-go="work">Work</a></li><li class="hide"><a href="#/" data-go="about">About</a></li><li><a href="#/" data-go="contact">Contact</a></li><li><a class="pdf" href="BAEKISOO_Portfolio.pdf" target="_blank" rel="noopener">PDF</a></li></ul></div></nav>
 
-<header class="hero" id="about"><div class="wrap grid">
+<main id="home">
+<header class="hero"><div class="wrap">
 <div>
-<p class="eyebrow">Brand Marketer · 4 Years</p>
-<h1>브랜드의 이야기를<br>콘텐츠와 현장으로 옮기는<br>마케터 배기수입니다.</h1>
-<p class="lead">인하우스·에이전시·크리에이터를 모두 경험했습니다. 시원아이웨어에서 13개 글로벌 아이웨어 브랜드를 맡았고, 2025년 PR 에이전시 엠앤아이를 설립해 코오롱FnC 시리즈, 헨리코튼, 캠브리지 멤버스, 멘토스 등 10개 브랜드의 캠페인을 운영하고 있습니다.</p>
-<div class="links">
-<a class="btn fill" href="#projects">프로젝트 보기</a>
-<a class="btn" href="mailto:mynameisyours@naver.com">mynameisyours@naver.com</a>
-<a class="btn" href="https://www.instagram.com/mynameisbaekisoo" target="_blank" rel="noopener">Instagram</a>
+<p class="eyebrow">Brand Marketer · 4년차 · 인하우스 / 에이전시 / 크리에이터</p>
+<h1>사람과 매체,<br>그리고 시기로<br>성과를 만드는 마케터</h1>
+<p class="lead">배기수입니다. 시원아이웨어에서 13개 글로벌 아이웨어 브랜드를 맡았고, 내셔널지오그래픽 마케팅팀을 거쳐 2025년 PR 에이전시 엠앤아이를 설립했습니다. 브랜드에 맞는 사람과 매체, 시기를 고르고 현장까지 끝까지 챙깁니다.</p>
+<div class="btns"><a class="btn fill" href="#/" data-go="work">대표 프로젝트 보기</a><a class="btn" href="BAEKISOO_Portfolio.pdf" target="_blank" rel="noopener">포트폴리오 PDF</a><a class="btn" href="mailto:mynameisyours@naver.com">메일 보내기</a></div>
 </div>
-</div>
-<img src="img/me1.jpg" alt="배기수 프로필 사진">
+<figure><img src="img/o_me1.jpg" alt="배기수 프로필 사진" width="591" height="827"><figcaption>BAE KI SOO</figcaption></figure>
 </div></header>
 
 <div class="wrap"><div class="stats">
-<div class="stat"><b>5,000만</b><span>인플루언서 협업 누적 조회수</span></div>
-<div class="stat"><b>1,000+</b><span>협업 인플루언서</span></div>
-<div class="stat"><b>300%</b><span>시리즈 에어트루퍼 전년 대비 판매</span></div>
-<div class="stat"><b>1만 명</b><span>시리즈×GTO 팝업 11일 방문객</span></div>
+<div class="stat"><b>5,000만 회</b><span>인플루언서 협업 콘텐츠 누적 조회</span></div>
+<div class="stat"><b>1,000명+</b><span>협업 인플루언서</span></div>
+<div class="stat"><b>300%</b><span>에어트루퍼 전년 대비 판매</span></div>
+<div class="stat"><b>1만 명</b><span>시리즈 × GTO 팝업 11일 방문객</span></div>
 </div></div>
 
-<section id="career"><div class="wrap">
-<h2>Career <small>총 4년</small></h2>
-<div class="career">
-<div class="job"><div class="when">2025.04 – 현재</div><div><h3>엠앤아이<em>PR·인플루언서 마케팅 에이전시 / 대표</em></h3>
-<p>시리즈, 헨리코튼, 캠브리지 멤버스, 찰스앤키스, 이로 파리, 멘토스, 무신사 엠프티 등 진행</p>
-<ul><li>시딩·협찬, 매거진·셀럽 섭외, 팝업 현장 운영, 결과 리포트까지 전 과정 담당</li><li>인플루언서·모델 네트워크 5,000명 이상 운영</li></ul></div></div>
-<div class="job"><div class="when">2025.01 – 2025.04</div><div><h3>더네이쳐홀딩스<em>내셔널지오그래픽 마케팅팀 / 사원</em></h3>
-<p>공식 인스타그램 피드·릴스 기획·운영 및 카피라이팅. 릴스 최대 101.2만 회, 백팩 검색량 3배, 매장 매출 1.5배</p></div></div>
-<div class="job"><div class="when">2024.01 – 2025.04</div><div><h3>태에이전시<em>PR팀 / 프리랜서 실장</em></h3>
-<p>바버, 래쉬아이웨어, 보타 인플루언서 PR·행사 기획. 바버 130주년 프로젝트 인플루언서 50명 섭외</p></div></div>
-<div class="job"><div class="when">2022.09 – 2024.05</div><div><h3>(주)시원아이웨어<em>브랜드전략부 마케팅팀 / 주임</em></h3>
-<p>Silhouette, 999.9, ZEGNA, Jill Stuart, Hazzys, Yohji Yamamoto 등 13개 글로벌 아이웨어 브랜드 마케팅</p>
-<ul><li>브랜드 화보 6회·제품 화보 22건 단독 기획, 트렁크쇼 등 이벤트 7회 운영</li><li>신규 거래처 34곳 확보, 전년 대비 매출 3배</li></ul></div></div>
-</div>
+<section id="work"><div class="wrap">
+<div class="sh"><h2>Selected Work</h2><p>카드를 누르면 프로젝트별 상세 페이지가 열립니다.</p></div>
+<div class="feat" id="feat"></div>
 </div></section>
 
-<section id="projects"><div class="wrap">
-<h2>Projects <small id="pcount"></small></h2>
+<section id="more" style="padding-top:0"><div class="wrap">
+<div class="sh"><h2>More Work</h2><p id="mcount"></p></div>
 <div class="filters" id="filters"></div>
-<div id="plist"></div>
+<div class="grid3" id="mlist"></div>
+<div class="sh" style="margin:80px 0 20px"><h2 style="font-size:20px">Archive</h2><p>작은 작업과 개인 프로젝트</p></div>
+<div class="arch" id="arch"></div>
+</div></section>
+
+<section id="about" class="about"><div class="wrap">
+<div class="sh"><h2>About</h2><p>인하우스 마케터 · 에이전시 운영 · 크리에이터 활동 4년 누적</p></div>
+<div class="abil">
+<div><b>5,000만 회</b><h4>콘텐츠 조회수</h4><p>1,000여 명의 인플루언서와 협업해 누적 5,000만 회의 콘텐츠 조회수를 달성했습니다.</p></div>
+<div><b>431%</b><h4>브랜드 게시물 증가</h4><p>입사 당시 2,300개였던 브랜드 게시물 수를 12,000개로 늘려 인지도를 키웠습니다.</p></div>
+<div><b>1/2</b><h4>마케팅 비용</h4><p>인하우스 재직 시 대행사 없이 스타 마케팅, 화보 기획·제작, 시딩을 직접 운영해 비용을 줄였습니다.</p></div>
+</div>
+<div class="jobs">
+<div class="job"><div class="when">2025.04 – 현재</div><div><h3>엠앤아이<em>PR·인플루언서 마케팅 에이전시 / 대표</em></h3><p>코오롱FnC 시리즈, 헨리코튼, 캠브리지 멤버스, 찰스앤키스, 랜돌프앤코, 멘토스 등 10개 브랜드</p><ul><li>시딩·협찬, 매거진·셀럽 섭외, 팝업 현장 운영, 결과 리포트까지 전 과정 담당</li><li>인플루언서·모델 네트워크 5,000명 이상 운영</li></ul></div></div>
+<div class="job"><div class="when">2025.01 – 2025.04</div><div><h3>더네이쳐홀딩스<em>내셔널지오그래픽 마케팅팀</em></h3><p>공식 인스타그램 피드·릴스 기획·운영 및 카피라이팅. 릴스 최대 101.2만 회, 백팩 검색량 3배, 매장 매출 1.5배</p></div></div>
+<div class="job"><div class="when">2024.01 – 2025.04</div><div><h3>태에이전시<em>PR팀 / 프리랜서</em></h3><p>바버, 래쉬아이웨어, 보타 인플루언서 PR·행사 기획. 바버 130주년 프로젝트 인플루언서 50명 섭외</p></div></div>
+<div class="job"><div class="when">2022.09 – 2024.05</div><div><h3>(주)시원아이웨어<em>브랜드전략부 마케팅팀 / 주임</em></h3><p>Silhouette, 999.9, ZEGNA, JILL STUART, Yohji Yamamoto 등 13개 글로벌 아이웨어 브랜드</p><ul><li>브랜드 화보 6회·제품 화보 22건 기획, 트렁크쇼 등 이벤트 운영</li><li>신규 거래처 34곳 확보, 전년 대비 매출 3배</li></ul></div></div>
+</div>
+<div class="skills">
+<div><h4>잘하는 일</h4><p>인플루언서·셀럽 섭외와 협상, 팝업·행사 기획과 현장 운영, 화보 컨셉 기획과 촬영 디렉팅</p></div>
+<div><h4>채널</h4><p>Instagram 피드·릴스, YouTube 롱폼·숏츠, 네이버 블로그·카페, 웹매거진, 자사몰</p></div>
+<div><h4>그 밖의 활동</h4><p>네이버 인플루언서(2023 – ), 소니 카메라 엠버서더(2023), 인스타그램 @mynameisbaekisoo 운영</p></div>
+</div>
 </div></section>
 
 <section id="contact" class="contact"><div class="wrap">
-<h2>Contact</h2>
-<p>브랜드에 맞는 사람과 매체, 시기를 고르고 현장까지 끝까지 챙기는 것이 저의 강점입니다. 온라인에서 시작된 관심이 매장 방문과 구매로 이어지는 캠페인을 만들어 가겠습니다.</p>
-<div class="links">
-<a class="btn fill" href="mailto:mynameisyours@naver.com">메일 보내기</a>
-<a class="btn" href="https://www.instagram.com/mynameisbaekisoo" target="_blank" rel="noopener">Instagram @mynameisbaekisoo</a>
-</div>
+<h2>온라인에서 시작된 관심이<br>매장 방문과 구매로 이어지는<br>캠페인을 만들겠습니다.</h2>
+<p>함께 이야기 나누고 싶은 브랜드가 있다면 편하게 연락 주세요.</p>
+<div class="btns"><a class="btn fill" href="mailto:mynameisyours@naver.com">mynameisyours@naver.com</a><a class="btn" href="https://www.instagram.com/mynameisbaekisoo" target="_blank" rel="noopener">Instagram @mynameisbaekisoo</a><a class="btn" href="BAEKISOO_Portfolio.pdf" target="_blank" rel="noopener">포트폴리오 PDF</a></div>
 </div></section>
-<footer><div class="wrap">© 2026 BAE KI SOO</div></footer>
+</main>
 
+<main id="case"></main>
+
+<footer><div class="wrap"><span>© 2026 BAE KI SOO</span><span>Brand Marketer Portfolio</span></div></footer>
+
+<div class="lb" id="lb"><button class="x" aria-label="닫기">✕</button><button class="pv" aria-label="이전">←</button><img alt=""><button class="nx" aria-label="다음">→</button><div class="cnt"></div></div>
+
+<script src="sizes.js"></script>
+<script src="data.js"></script>
 <script>
-const P=[
-{k:'s26',n:4,org:'엠앤아이',t:'시리즈 26FW IG & YT 콘텐츠 캠페인',when:'2026.08 – 2026.10',c:'100%',
-s:'코오롱FnC 시리즈 26FW 에어트루퍼·체크셔츠·로우하이드·언어펙티드 콜라보 라인의 인스타그램·유튜브 콘텐츠 대행. 라인별 크리에이터를 나눠 8~10월에 운영했습니다.',
-p:['네 개 라인을 한 시즌 안에 각기 다른 무드로 알려야 했음','기존 팔로워 노출만으로는 신규 고객에게 닿기 어려웠음','조회수만으로는 구매 고려 반응을 판단하기 어려웠음'],
-so:['라인별 인플루언서 선정, 8~10월 공개 시점 분산','릴스·유튜브 숏츠 비중을 높여 비팔로워 도달 확대','크리에이터별 인사이트(저장·공유·유입 검색어) 수령 후 리포트화'],
-r:[['총 조회수 120만 회','콘텐츠 72건 · 참여율 2.6%'],['릴스 비팔로워 조회 56%','피드 평균 33% 대비 높은 신규 도달'],['저장 1,255 · 공유 772','숏츠 유입 검색어 1위 ‘에어트루퍼’']]},
-{k:'hc',n:3,org:'엠앤아이',t:'헨리코튼 26SS 바이럴 캠페인',when:'2026.02 – 2026.06',c:'100%',
-s:'IG·네이버 블로그·유튜브를 묶은 통합 바이럴로 26SS 시즌 인지도를 넓힌 캠페인. 리플리 니트 등 시즌 신상의 인플루언서 협업 콘텐츠를 기획·운영했습니다.',
-p:['신상은 많았지만 채널마다 소비 방식이 달라 같은 소재로는 반응이 흩어졌음','검색 단계에서의 노출 설계가 함께 필요했음'],
-so:['IG는 릴스·피드 비주얼, 블로그는 키워드 상위 노출, 유튜브는 실착·리뷰 중심으로 포맷 분리','피셔맨 쇼츠 다운파카·울 부클 패디드 피코트 등 시즌 아이템을 반복 노출해 구매로 연결','키워드 노출 관리 및 성과 리포트 작성'],
-r:[['누적 판매율 85.7%','울 부클 패디드 피코트'],['IG 조회 6.4만 회 이상','협업 계정 누적 팔로워 약 65만'],['네이버 키워드 탭뷰 10위 이내','주요 키워드 다수 확보']]},
-{k:'gto',n:4,org:'엠앤아이',t:'시리즈 × GTO IP 협업 PR 캠페인 (성수 팝업)',when:'2026.03 – 2026.05',c:'100%',
-s:'코오롱FnC 시리즈와 일본 IP ‘GTO’ 협업 PR 캠페인 집행 대행. 매체·인플루언서 선정, 공개 일정 조율, 셀럽 캐스팅, RSG 성수 팝업 현장 운영을 담당했습니다.',
-p:['GTO 협업 제품 중 어떤 품목을 PR 대상으로 내세울지 정해야 했음','애니·바이크·패션 커뮤니티를 한 캠페인에서 동시에 공략해야 했음','팝업 방문이 다시 SNS 콘텐츠로 이어질 장치가 필요했음'],
-so:['GTO 세계관 연관성 기준으로 PR 품목 우선순위 정리','커뮤니티별 매체·인플루언서 선정, 사전 바이럴→오픈→방문 인증 순으로 공개','셀럽(곽범) 캐스팅·협상 및 11일 현장 운영'],
-r:[['방문객 1만 명','11일 운영 · 현장 프로그램 참여 2,500명'],['목표 대비 매출 150%','구매 고객 81% 신규, 그중 75% 2030'],['SNS 총 조회수 300만 회','IG·블로그·유튜브·웹매거진 합산']]},
-{k:'mentos',n:2,org:'엠앤아이',t:'멘토스 필링베리굿 셀럽 브랜디드 콘텐츠',when:'2026.01',c:'100%',
-s:'멘토스 ‘Feeling Berry Good’ 캠페인의 유튜브·인스타그램 브랜디드 콘텐츠 집행 대행. 에픽하이·밈PD 캐스팅과 댓글 이벤트 운영을 담당했습니다.',
-p:['발랄한 캔디 이미지에서 2030이 공감할 도시적 무드로 전환이 필요했음','이동·식후 리프레시 간식으로서 인지도가 낮았음','직접적인 제품 노출에 대한 광고 거부감'],
-so:['도시적 무드의 셀럽 리스트업 후 에픽하이·밈PD 캐스팅','채널별 톤에 맞춘 기획안, 숏츠·롱폼·릴스 같은 기간 집중 업로드','구독자 댓글 이벤트, 초안 검수 및 결과 리포트'],
-r:[['합산 조회수 234만 회','YT 숏츠·브랜디드·IG 릴스'],['댓글 이벤트 371명 참여','제품 관심도·체험 수요 확인'],['채널 구독자 290만','에픽하이 등 협업 채널 누적']]},
-{k:'at25',n:4,org:'엠앤아이',t:'시리즈 에어트루퍼 IG & YT 시딩 캠페인',when:'2025.10 – 2025.11',c:'100%',
-s:'구스다운 신제품 에어트루퍼와 언어펙티드 콜라보 제품의 인스타그램·유튜브 시딩 대행. 제품과 어울리는 인플루언서·유튜버를 선정하고 업로드 시점을 나눠 운영했습니다.',
-p:['실착·활동·기온·체형을 보여주는 콘텐츠가 부족했음','기능·가격·디자인이 비슷한 경쟁 제품이 많았음','유료 광고보다 효율 높은 자연 확산 채널이 필요했음'],
-so:['체형·스타일이 다른 크리에이터 매칭, 피드·릴스·숏츠로 실착 콘텐츠 확보','제품별 USP를 가이드에 담고 업로드 시점을 나눠 반복 노출','자사몰 기획전·브랜드 리그램으로 2차 활용'],
-r:[['전년 대비 판매 300%','리오더 및 전 재고 품절'],['통합 조회수 130만 회','협업 채널 팔로워 합계 227만'],['유튜브 6개 채널 협업','고정 댓글·본문 링크로 구매 유입']]},
-{k:'rd',n:3,org:'엠앤아이',t:'랜돌프앤코 26SS 룩북 촬영 PM',when:'2025.09 – 2025.11',c:'100%',
-s:'랜돌프앤코 26SS 룩북 촬영 PM. ‘THE TIFFANY LIGHT’ 컨셉 기획부터 모델 섭외, 현장 진행, 보정·납품까지 전 과정을 담당했습니다.',
-p:['시즌 컬러 티파니 민트와 가을 촬영의 무드를 하나로 묶어야 했음','남녀 모델·룩별 스타일링·공간 이동을 하루에 소화해야 했음','셀렉·보정·공유 단계가 길어 납품 일정 관리가 필요했음'],
-so:['피오르에서 착안한 컨셉·무드보드, 컷별 레퍼런스 정리','룩별 스타일링 보드, 20분 단위 촬영 스케줄과 동선 설계','1·2차 보정본 단계별 공유 후 최종 납품'],
-r:[['1일 촬영 12컷 완료','남녀 모델 2인 · 스튜디오 3개 공간'],['컨셉 기획안 확정','1·2차 기획안 공유 후 최종 확정'],['시즌 룩북 최종 납품','단계별 피드백 반영']]},
-{k:'ck',n:4,org:'엠앤아이',t:'찰스앤키스 인플루언서 엠버서더 프로그램',when:'2025.07 – 2025.12',c:'90%',
-s:'브랜드 무드에 맞는 인플루언서를 선별해 엠버서더 프로그램으로 운영한 캠페인. 단발성 협찬이 아닌 정기 협업으로 노출을 이어갔습니다.',
-p:['글로벌 인지도에 비해 국내에서는 ‘가성비 브랜드’ 인식이 강했음','단발성 협찬만으로는 브랜드 메시지가 꾸준히 전달되지 않았음','브랜드가 지향하는 국내 비주얼이 부족했음'],
-so:['성별·연령별로 분류해 브랜드 무드에 맞는 인원 선별','정기 엠버서더 운영 + 패션 매거진 3개월 월간 포스팅','엠버서더와 시즌 룩북 촬영, 공식 계정·광고 소재로 제공'],
-r:[['사진 게시물 20건','6개월간 꾸준한 노출'],['2030 여성 타깃 노출','정기 매거진·룩북으로 트렌디한 이미지'],['룩북 비주얼 확보','공식 계정·광고 소재 활용']]},
-{k:'cb',n:4,org:'엠앤아이',t:'캠브리지 멤버스 브랜드 리뉴얼 행사',when:'2025.05 – 2025.06',c:'90%',
-s:'캠브리지 멤버스의 브랜드 리뉴얼을 기념한 잠실 롯데백화점 오프라인 행사. MTM 서비스와 새 BI·SI를 처음 공개하는 자리로, 인플루언서·유튜버 섭외와 콘텐츠 운영, 현장 응대를 담당했습니다.',
-p:['기존 콘텐츠가 반복되어 리뉴얼 소식이 새롭게 전달되지 않았음','사전 맞춤이 필요한 MTM 특성상 현장 방문까지 이끌어야 했음','오프라인 중심 구조라 온라인으로 넓힐 방법이 필요했음'],
-so:['개인 네트워크로 브랜드에 맞는 패션 인플루언서·유튜버 섭외','MTM 체험·리뉴얼 메시지가 담기도록 가이드, 방문 일정 협의','업로드 일정을 나눠 운영하고 콘텐츠별 조회수 모니터링'],
-r:[['매출 30% 성장','리뉴얼 행사 + 콘텐츠 운영 결과'],['최대 조회수 13만 회','인플루언서 콘텐츠 단일 기준'],['리뉴얼 메시지 전달','새 BI·SI와 MTM 함께 노출']]},
-{k:'bb',n:4,org:'태에이전시',t:'바버(Barbour) 130주년 수원 스타필드 팝업',when:'2024.10 – 2025.03',c:'40%',
-s:'바버 130주년을 맞아 수원 스타필드에서 진행한 오프라인 팝업. 서울 권역이 아닌 지역 행사였지만 인플루언서 방문과 콘텐츠 업로드를 이끌어 오프라인 방문 증가에 기여했습니다.',
-p:['서울 주요 상권이 아닌 수원 팝업이라 자연 유입이 제한적이었음','헤리티지를 직접 경험한 방문이 온라인 콘텐츠로 이어져야 했음','짧은 기간 안에 디지털 노출과 현장 방문을 함께 늘려야 했음'],
-so:['브랜드에 맞는 패션 인플루언서 + 수원·경기 남부 로컬 크리에이터 섭외','방문 인플루언서 대상 브랜드 스토리·라인업 브리핑, 촬영 지원','방문 당일 업로드 원칙으로 노출 공백 최소화'],
-r:[['인플루언서 50명 섭외','130주년 헤리티지 전달'],['섭외 예산 절반 절감','개인 네트워크 활용'],['오프라인 방문 유도','실시간 업로드를 보고 방문하는 고객 증가']]},
-{k:'ng',n:2,org:'더네이쳐홀딩스',t:'내셔널지오그래픽 공식 인스타그램 콘텐츠 기획·운영',when:'2025.03',c:'90%',
-s:'시즌 비주얼을 바탕으로 브랜드의 탐험 정신과 일상 속 활용성 사이의 균형을 담은 피드·릴스 콘텐츠를 기획·제작하고 카피라이팅을 진행했습니다.',
-p:['시즌 비주얼을 SNS 포맷에 맞게 풀어낼 운영 방향이 필요했음','스테디셀러 백팩의 신학기 수요를 콘텐츠로 끌어내야 했음','탐험 정신과 일상 활용성을 함께 보여줘야 했음'],
-so:['시즌 비주얼 선별 및 포맷별 운영 방향 수립','트렌드와 브랜드 아이덴티티를 결합한 카피라이팅','포토크루·가족 캠핑 등 캠페인형 콘텐츠 기획'],
-r:[['릴스 최대 101.2만 회','단일 콘텐츠 기준'],['백팩 검색량 3배','백팩 카테고리 온라인 검색량'],['매장 매출 1.5배','백팩 카테고리 매장 매출']]},
-{k:'vt',im:['vt2','vt3'],org:'태에이전시',t:'보타(VOTTA) 인플루언서 PR 캠페인',when:'2024.05 – 2024.06',
-s:'양말 브랜드 보타의 인플루언서 협찬 캠페인과 오프라인 행사 기획. 경쟁사·트렌드 분석부터 콘텐츠 디렉팅, 인플루언서 섭외까지 맡았습니다.',
-ro:['경쟁사·트렌드 분석','인플루언서 PR 전략 수립 및 콘텐츠 디렉팅','행사 기획 (스토리텔링, VMD)','인플루언서 섭외·관리, 고객 반응 데이터 정리'],
-r:[['평균 좋아요 326','최고 1,431'],['댓글 참여율 20%','2024.05.15 – 06.07 집행분']]},
-{k:'sim',im:['sim2','sim3'],org:'개인 프로젝트',t:'네트워킹 마켓 ‘SIM터’ 기획·운영',when:'2024.05 – 2024.06',
-s:'인플루언서와 브랜드가 각각 호스트가 되어 마켓을 중심으로 함께 즐기는 네트워킹 행사. 셀러로 참여하면서 지인의 첫 오프라인 행사 기획, 스태프 모집, 홍보, 인플루언서 초대까지 주도했습니다.',
-ro:['행사 기획 및 스태프 섭외','인플루언서 PR 전략 수립','인플루언서 섭외·관리'],
-hl:'판매만 하는 장소가 아니라 사람들이 머물고 싶은 공간을 만드는 데 집중했습니다.',
-r:[['방문객 약 270명','첫 오프라인 행사']]},
-{k:'tr2',n:3,org:'시원아이웨어',t:'실루엣 트렁크쇼 (2) ‘우주’',when:'2024.03 – 2024.04',
-s:'파피루스 안경원과 진행한 실루엣 아이웨어의 두 번째 트렁크쇼. 장소를 고를 수 없는 작은 공간에서 ‘우주’ 컨셉으로 2일간 쇼를 기획·운영했습니다.',
-p:['영업 이슈로 장소를 고를 권한이 없었음','작은 공간에서 방문객이 머물 장치가 필요했음'],
-so:['‘기술은 무한해도 오리지널 안경의 가치는 영원하다’는 의미의 우주 컨셉','가디언즈 오브 갤럭시의 카세트에서 착안한 MP3·헤드셋 디스플레이','홍보 포스터, VMD 소품, 인플루언서·스태프 섭외'],
-r:[['신규 거래처 16곳','2일 운영'],['영업 이익 40% 증가','긱시크 트렌드 주도'],['매출 200%','입사 이후 대비']]},
-{k:'js',n:3,org:'시원아이웨어',t:'질스튜어트 아이웨어 브랜디드 화보·필름',when:'2023.12 – 2024.01',
-s:'질스튜어트가 원한 ‘뉴욕의 감성’을 살린 브랜디드 화보와 브랜드 필름을 기획하고 촬영했습니다.',
-hl:'뉴욕 유학생, 이민자 직장인, 카페 사장. 세 인물의 일상에 선글라스를 자연스럽게 녹인 페르소나 화보로 풀었습니다.',
-ro:['화보·브랜드 필름 컨셉 기획, 필름 스토리 작성','모델·스태프·장소 섭외','촬영 진행 및 보조','질스튜어트 영업부 커뮤니케이션']},
-{k:'fn',n:4,org:'시원아이웨어',t:'포나인즈(999.9) 거점 안경원 기획',when:'2022.10 – 2023.09',c:'90%',
-s:'포나인즈의 입지·매출·서비스를 분석해 거점 안경원을 선정하고 B2C·B2B 운영 관리를 기획했습니다. 엠버서더 프로그램과 본사 견학 프로그램으로 브랜드 충성도를 높였습니다.',
-p:['브랜드 콘텐츠가 부족해 소비자와의 소통이 원활하지 않았음','국내 시장에서 브랜드 인지도를 높일 방법이 필요했음','오프라인 매출을 늘릴 새로운 접근이 필요했음'],
-so:['패션 인플루언서·거점 안경원 대표를 엠버서더로 선정해 콘텐츠 제작','주요 도시 거점 안경원 5곳 선정, VMD 기획','네이버 바이럴·파워링크·SEM 키워드 운영'],
-r:[['매출 3배 성장','거점 안경원 협업·엠버서더 콘텐츠 운영'],['콘텐츠 5,000건','인플루언서·블로거 협업 누적'],['취급 매장 1.5배','거점 안경원 운영 이후']]},
-{k:'fj',n:3,org:'시원아이웨어',t:'포나인즈(999.9) 일본 본사 콘텐츠 출장',when:'2023.10',
-s:'포나인즈 본사 초청으로 크리에이터 노연홍 님과 도쿄에 다녀왔습니다. 국내 소비자가 브랜드를 이해할 수 있는 콘텐츠를 만들기 위해 4일간 도쿄·시부야·긴자에서 촬영했습니다.',
-ro:['콘텐츠 기획','콘텐츠 촬영 및 제작']},
-{k:'tr1',n:2,a:'4/3',org:'시원아이웨어',t:'실루엣 트렁크쇼 (1) ‘졸업사진’',when:'2023.06 – 2023.07',
-s:'실루엣 아이웨어의 ‘졸업사진’ 컨셉 트렁크쇼. 자이스비전센터와 협업해 5일간 오프라인 쇼를 기획·진행하고, 분야별 인플루언서를 초대해 브랜드 가치를 전했습니다.',
-ro:['트렁크쇼 컨셉 기획 및 화보 촬영','3D 홍보물·졸업앨범 기획 및 제작','인플루언서 초대 및 현장 운영'],
-r:[['신규 거래처 8곳','5일 운영'],['전월 대비 매출 120%','트렁크쇼 기간']]},
-{k:'sil',n:3,org:'시원아이웨어',t:'실루엣 아이웨어 ‘졸업사진’ 화보 기획',when:'2023.05 – 2023.06',c:'100%',
-s:'글로벌 브랜드 실루엣 아이웨어의 화보를 패션 인플루언서와 함께 단독 기획·제작하고, 화보 컨셉을 반영한 팝업 행사로 이어갔습니다.',
-p:['사내 인력이 부족해 화보 전 과정을 혼자 진행해야 했음','무테 안경의 특징을 화보 이미지로 보여주기 어려웠음','업계 평균보다 낮은 예산'],
-so:['렌즈 모양을 자유롭게 바꾸는 무테의 특징을 컨셉으로 설정','‘졸업사진’ 컨셉으로 꿈을 이루는 스토리라인 기획','의류 브랜드 협업 제안으로 모델 의상 풀세트 협찬'],
-r:[['매출 3배 성장','화보·오프라인 행사 연계, 전년 대비'],['브랜드 검색량 3배','화보·인플루언서 협업 이후'],['신규 거래처 34곳','자이스비전센터 트렁크쇼']]},
-{k:'ys',n:2,org:'시원아이웨어',t:'Y’s 아이웨어 인플루언서 시딩',when:'2023.12',c:'90%',
-s:'성별·연령별 타기팅으로 인플루언서를 선별해 아이웨어 시딩 캠페인을 진행하고, 사진·릴스 게시물 40건을 발행했습니다.',
-p:['브랜드 인지도를 높일 자체 콘텐츠가 부족했음','면세점을 포함한 오프라인 매출이 정체돼 있었음','계약 종료가 결정돼 남은 기간의 전략 재정비가 필요했음'],
-so:['패션·다양한 연령대 인플루언서로 사진·릴스 40건 발행','전국 면세점 세일즈 노출 강화, 안경원 입점 확대','제품 반환 조건 설정으로 마케팅 비용 최적화'],
-r:[['평균 좋아요 850개','최고 1,698개'],['평균 도달 13,000명','최고 82,000명'],['마케팅 비용 절감','제품 반환 조건으로 예산 효율 확보']]},
-{k:'hb',n:2,org:'시원아이웨어',t:'아이웨어 화보 컨셉 기획·촬영',when:'2022 – 2024',
-s:'실루엣 ‘카멜레온’, 도르만 ‘LADIES, NO MORE CONTACT LENSES’, 실루엣 ‘졸업앨범’, 니로 ‘너와 난’, ByWp ‘애니원’ 등 브랜드별 화보 컨셉을 기획하고 촬영을 진행했습니다.',
-hl:'‘카멜레온’은 안경 착용에 대한 여성들의 부정적 인식을 바꾸는 게 목표였습니다. 오피스룩과 함께 안경의 매력과 실용성을 텍스트보다 이미지로 보여주는 데 집중했습니다.',
-ro:['화보 컨셉 기획','모델·스태프 섭외 및 관리','촬영 진행 및 보조 (모델로도 참여)']},
-{k:'cc',n:2,a:'4/3',org:'시원아이웨어',t:'제품 컨셉컷 기획·촬영',when:'2022 – 2024',
-s:'Y’s, 제냐(ZEGNA), ByWp, 도르만, 스틸브라운의 제품 컨셉컷을 기획하고 촬영을 진행했습니다. 면세점·브랜드 측 커뮤니케이션도 맡았습니다.',
-ro:['제품 컨셉컷 기획','촬영 진행','면세점·브랜드 커뮤니케이션']},
-{k:'ct',n:2,a:'4/3',org:'시원아이웨어',t:'제품 카탈로그 기획',when:'2022 – 2024',
-s:'스틸브라운, ByWp, 도르만 카탈로그의 레이아웃을 구상하고 섹션별 내용을 정리했습니다. 스틸브라운은 원고 작성과 편집까지 맡았습니다.',
-ro:['카탈로그 레이아웃 구상','섹션별 내용 기획·정리','원고 작성, 편집, 검토','촬영 진행 및 보조']},
-{k:'ip',n:3,a:'4/3',org:'시원아이웨어',t:'아이웨어 7개 브랜드 인플루언서 PR',when:'2022 – 2024',
-s:'Y’s(2회), 질스튜어트, 니로, 실루엣(3회), ByWp, 포나인즈 등 7개 브랜드의 인플루언서 PR을 운영했습니다.',
-ro:['경쟁사·트렌드 분석, PR 전략 수립','행사 기획 (스토리텔링, VMD)','인플루언서 섭외·관리','콘텐츠 품질 관리, 성과 측정 및 인사이트 정리']},
-{k:'plz',n:2,org:'개인 프로젝트',t:'스트릿 브랜드 ‘PLZ SMILE’ 런칭',when:'2021.09 – 2022.01',
-s:'대학교 4학년 때 ‘세상 모든 사람이 웃길 바라는 마음’을 담아 동기들과 만든 브랜드. 티셔츠 4종, 비니 4종, 머그컵 2종을 만들었습니다.',
-ro:['브랜드 스토리 기획','인플루언서 시딩 및 촬영']}
-];
-const ORGS=['전체','엠앤아이','더네이쳐홀딩스','태에이전시','시원아이웨어','개인 프로젝트'];
-const fl=document.getElementById('filters'),pl=document.getElementById('plist');
-function render(f){
- const L=P.filter(x=>f==='전체'||x.org===f);
- document.getElementById('pcount').textContent=L.length+'건';
- pl.innerHTML=L.map(x=>{const ims=x.im||Array.from({length:x.n},(_,i)=>x.k+(i+1));
- const li=a=>a.map(v=>`<li>${v}</li>`).join('');const B=[];
- if(x.p)B.push(`<div><h4>문제 인식</h4><ul>${li(x.p)}</ul></div>`);
- if(x.so)B.push(`<div><h4>해결 방안</h4><ul>${li(x.so)}</ul></div>`);
- if(x.hl)B.push(`<div><h4>기획 포인트</h4><p>${x.hl}</p></div>`);
- if(x.ro)B.push(`<div><h4>주요 역할</h4><ul>${li(x.ro)}</ul></div>`);
- if(x.r)B.push(`<div class="res"><h4>성과</h4><ul>${x.r.map(v=>`<li><strong>${v[0]}</strong>${v[1]}</li>`).join('')}</ul></div>`);
- return `<article class="proj">
- <div class="proj-head"><div><h3>${x.t}</h3><div class="meta">${x.when} · ${x.org}${x.c?' · 기여도 '+x.c:''}</div></div><span class="tag">${x.org}</span></div>
- <div class="gallery" style="--n:${x.a?Math.max(ims.length,2):Math.max(ims.length,3)};--ar:${x.a||'4/5'}">${ims.map((m,i)=>`<img loading="lazy" src="img/${m}.jpg" alt="${x.t} 이미지 ${i+1}">`).join('')}</div>
- <p class="summary">${x.s}</p>
- <div class="psr" style="--c:${B.length}">${B.join('')}</div>
- </article>`}).join('');
- [...fl.children].forEach(b=>b.classList.toggle('on',b.textContent===f));
+const $=s=>document.querySelector(s);
+const im=(k,cls='',lazy=true)=>{const s=SZ[k]||[4,5];return `<img src="img/${k}.jpg" width="${s[0]}" height="${s[1]}" ${lazy?'loading="lazy"':''} alt="" ${cls}>`};
+const kpi=(w,n)=>w.key?`<div class="kpi">${w.key.slice(0,n).map(k=>`<div><b>${k[0]}</b><span>${k[1]}</span></div>`).join('')}</div>`:'';
+function card(w,big){return `<a class="card" href="#/work/${w.id}"><div class="ph">${im(w.cover)}</div>
+<div class="meta"><span>${w.brand}</span><span>${w.when}</span></div><h3>${w.title}</h3><p class="hook">${w.hook}</p>${big?kpi(w,3):''}</a>`}
+function home(){
+ $('#feat').innerHTML=WORK.filter(w=>w.featured).map(w=>card(w,true)).join('');
+ const rest=WORK.filter(w=>!w.featured);
+ const fl=$('#filters');const cats=['전체',...Object.values(CATS)];
+ const draw=c=>{const L=rest.filter(w=>c==='전체'||CATS[w.cat]===c);$('#mlist').innerHTML=L.map(w=>card(w,false)).join('');$('#mcount').textContent=L.length+'개 프로젝트';[...fl.children].forEach(b=>b.classList.toggle('on',b.textContent===c))};
+ fl.innerHTML=cats.map(c=>`<button type="button">${c}</button>`).join('');fl.onclick=e=>{if(e.target.tagName==='BUTTON')draw(e.target.textContent)};draw('전체');
+ $('#arch').innerHTML=ARCHIVE.map((a,i)=>`<a href="javascript:void(0)" data-lb="${a.img}">${im(a.img)}<div><b>${a.t}</b><span>${a.d}</span></div><em>${a.o}</em></a>`).join('');
 }
-fl.innerHTML=ORGS.map(o=>`<button type="button">${o}</button>`).join('');
-fl.onclick=e=>{if(e.target.tagName==='BUTTON')render(e.target.textContent)};
-render('전체');
+function casePage(id){
+ const i=WORK.findIndex(w=>w.id===id);if(i<0){location.hash='#/';return}
+ const w=WORK[i],prev=WORK[(i-1+WORK.length)%WORK.length],next=WORK[(i+1)%WORK.length];
+ const blk=(h,sub,body)=>`<div class="blk"><h2>${h}${sub?`<small>${sub}</small>`:''}</h2><div>${body}</div></div>`;
+ let b='';
+ b+=blk('배경','문제 인식',`<p>${w.bg}</p>`);
+ if(w.concept)b+=blk(w.concept.h,'컨셉',`<p>${w.concept.t}</p><div class="story">${w.concept.story.map(s=>`<div><b>${s[0]}</b><span>${s[1]}</span></div>`).join('')}</div>`);
+ if(w.chapters)b+=blk('실행','시즌별 운영',w.chapters.map(c=>`<div class="chap"><h3>${c.h}</h3><p>${c.t}</p><div class="mini">${c.k.map(k=>`<div><b>${k[0]}</b><span>${k[1]}</span></div>`).join('')}</div></div>`).join(''));
+ if(w.plan)b+=blk('실행','전략과 실행',`<ol>${w.plan.map(p=>`<li>${p}</li>`).join('')}</ol>`);
+ if(w.result)b+=blk('결과','',`<p>${w.result}</p>`);
+ if(w.learn)b+=blk('인사이트','배운 점',`<p class="learn">${w.learn}</p>`);
+ const vids=w.videos?`<div class="vids">${w.videos.map(v=>`<video src="img/${v}" controls muted playsinline preload="metadata"></video>`).join('')}</div>`:'';
+ $('#case').innerHTML=`<div class="wrap c-top"><a class="back" href="#/" data-go="work">← 전체 프로젝트</a>
+ <p class="c-cat">${CATS[w.cat]} · ${w.org}</p><h1>${w.title}</h1><p class="hook">${w.hook}</p>
+ <div class="c-meta"><div><small>Brand</small><span>${w.brand}</span></div><div><small>Period</small><span>${w.when}</span></div><div><small>Role</small><span>${w.role}</span></div><div><small>기여도</small><span>${w.share||'—'}</span></div></div></div>
+ <div class="wrap"><div class="c-hero">${im(w.cover,'',false)}</div>
+ ${w.key?`<div class="c-key">${w.key.map(k=>`<div><b>${k[0]}</b><span>${k[1]}</span></div>`).join('')}</div>`:''}
+ <div class="c-body">${b}</div>
+ <div class="gal"><h2>Visuals <span>${w.imgs.length+(w.videos?w.videos.length:0)}컷 · 사진을 누르면 크게 볼 수 있습니다</span></h2>${vids}<div class="mason">${w.imgs.map(k=>`<figure data-lb="${k}">${im(k)}</figure>`).join('')}</div></div>
+ <div class="nextp"><a href="#/work/${prev.id}"><small>← 이전 프로젝트</small><b>${prev.title}</b></a><a href="#/work/${next.id}"><small>다음 프로젝트 →</small><b>${next.title}</b></a></div></div>`;
+ window.scrollTo(0,0);
+}
+function route(){
+ const m=location.hash.match(/^#\/work\/([\w-]+)/);
+ if(m){document.body.classList.add('case');casePage(m[1]);const t=WORK.find(w=>w.id===m[1]);document.title=(t?t.title+' | ':'')+'배기수'}
+ else{document.body.classList.remove('case');document.title='배기수 | Brand Marketer Portfolio';if(pendingGo){const t=document.getElementById(pendingGo);pendingGo=null;if(t)setTimeout(()=>t.scrollIntoView(),0)}}
+}
+let pendingGo=null;
+document.addEventListener('click',e=>{const g=e.target.closest('[data-go]');if(g){e.preventDefault();pendingGo=g.dataset.go;if(location.hash.startsWith('#/work')){location.hash='#/'}else{document.getElementById(pendingGo)?.scrollIntoView();pendingGo=null}}});
+// lightbox
+const lb=$('#lb');let L=[],li=0;
+const show=()=>{lb.querySelector('img').src='img/'+L[li]+'.jpg';lb.querySelector('.cnt').textContent=(li+1)+' / '+L.length};
+document.addEventListener('click',e=>{const f=e.target.closest('[data-lb]');if(!f)return;const box=f.parentElement;L=[...box.querySelectorAll('[data-lb]')].map(x=>x.dataset.lb);li=L.indexOf(f.dataset.lb);show();lb.classList.add('on')});
+lb.addEventListener('click',e=>{if(e.target.classList.contains('pv')){li=(li-1+L.length)%L.length;show()}else if(e.target.classList.contains('nx')){li=(li+1)%L.length;show()}else if(e.target===lb||e.target.classList.contains('x'))lb.classList.remove('on')});
+document.addEventListener('keydown',e=>{if(!lb.classList.contains('on'))return;if(e.key==='Escape')lb.classList.remove('on');if(e.key==='ArrowLeft'){li=(li-1+L.length)%L.length;show()}if(e.key==='ArrowRight'){li=(li+1)%L.length;show()}});
+home();window.addEventListener('hashchange',route);route();
 </script>
 </body>
 </html>
