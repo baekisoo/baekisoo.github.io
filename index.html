@@ -51,8 +51,10 @@ section{padding:96px 0}
 .feat{display:grid;grid-template-columns:repeat(2,1fr);gap:56px 32px}
 .card{display:block;cursor:pointer}
 .card .ph{overflow:hidden;background:var(--soft);aspect-ratio:4/5}
-.feat .card:nth-child(1),.feat .card:nth-child(4){grid-column:span 2}
-.feat .card:nth-child(1) .ph,.feat .card:nth-child(4) .ph{aspect-ratio:16/9}
+.feat .card:nth-child(1),.feat .card:nth-child(6){grid-column:span 2}
+.feat .card:nth-child(1) .ph,.feat .card:nth-child(6) .ph{aspect-ratio:16/9}
+.tg{display:inline-block;font-size:11px;font-weight:600;border:1px solid var(--ink);padding:1px 7px;margin-right:8px;color:var(--ink)}
+.tg.ag{border-color:var(--line);color:var(--sub)}
 .card .ph img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
 .card:hover .ph img{transform:scale(1.03)}
 .card .meta{display:flex;justify-content:space-between;gap:16px;margin-top:16px;font-size:13px;color:var(--sub)}
@@ -175,7 +177,7 @@ body.case #home{display:none}body.case #case{display:block}
  .c-key div:nth-child(3){border-left:0}.c-key div:nth-child(n+3){border-top:1px solid #333}
  section{padding:64px 0}
  .feat,.grid3{grid-template-columns:1fr;gap:44px}
- .feat .card:nth-child(1),.feat .card:nth-child(4){grid-column:auto}
+ .feat .card:nth-child(1),.feat .card:nth-child(6){grid-column:auto}
  .feat .card .ph{aspect-ratio:4/5!important}
  .abil,.skills{grid-template-columns:1fr}
  .abil div,.abil div+div{padding:24px 0}
@@ -266,8 +268,9 @@ body.case #home{display:none}body.case #case{display:block}
 const $=s=>document.querySelector(s);
 const im=(k,cls='',lazy=true)=>{const s=SZ[k]||[4,5];return `<img src="img/${k}.jpg" width="${s[0]}" height="${s[1]}" ${lazy?'loading="lazy"':''} alt="" ${cls}>`};
 const kpi=(w,n)=>w.key?`<div class="kpi">${w.key.slice(0,n).map(k=>`<div><b>${k[0]}</b><span>${k[1]}</span></div>`).join('')}</div>`:'';
+const tg=w=>{const t=TYPE[w.org];return t?`<span class="tg ${t==='에이전시'?'ag':''}">${t}</span>`:''};
 function card(w,big){return `<a class="card" href="#/work/${w.id}"><div class="ph">${im(w.cover)}</div>
-<div class="meta"><span>${w.brand}</span><span>${w.when}</span></div><h3>${w.title}</h3><p class="hook">${w.hook}</p>${big?kpi(w,3):''}</a>`}
+<div class="meta"><span>${tg(w)}${w.brand}</span><span>${w.when}</span></div><h3>${w.title}</h3><p class="hook">${w.hook}</p>${big?kpi(w,3):''}</a>`}
 function home(){
  $('#feat').innerHTML=WORK.filter(w=>w.featured).map(w=>card(w,true)).join('');
  const rest=WORK.filter(w=>!w.featured);
@@ -289,7 +292,7 @@ function casePage(id){
  if(w.learn)b+=blk('인사이트','배운 점',`<p class="learn">${w.learn}</p>`);
  const vids=w.videos?`<div class="vids">${w.videos.map(v=>`<video src="img/${v}" controls muted playsinline preload="metadata"></video>`).join('')}</div>`:'';
  $('#case').innerHTML=`<div class="wrap c-top"><a class="back" href="#/" data-go="work">← 전체 프로젝트</a>
- <p class="c-cat">${CATS[w.cat]} · ${w.org}</p><h1>${w.title}</h1><p class="hook">${w.hook}</p>
+ <p class="c-cat">${tg(w)}${CATS[w.cat]} · ${w.org}</p><h1>${w.title}</h1><p class="hook">${w.hook}</p>
  <div class="c-meta"><div><small>Brand</small><span>${w.brand}</span></div><div><small>Period</small><span>${w.when}</span></div><div><small>Role</small><span>${w.role}</span></div><div><small>기여도</small><span>${w.share||'—'}</span></div></div></div>
  <div class="wrap"><div class="c-hero">${im(w.cover,'',false)}</div>
  ${w.key?`<div class="c-key">${w.key.map(k=>`<div><b>${k[0]}</b><span>${k[1]}</span></div>`).join('')}</div>`:''}
