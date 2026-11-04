@@ -73,6 +73,7 @@ section{padding:96px 0}
 /* archive */
 .arch{border-top:1px solid var(--ink)}
 .arch a{display:grid;grid-template-columns:96px 1fr auto;gap:20px;align-items:center;padding:16px 0;border-bottom:1px solid var(--line)}
+.noimg{width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:var(--soft);padding:24px;text-align:center}.noimg b{font-size:22px;font-weight:700;letter-spacing:-.01em}
 .arch img{width:96px;height:72px;object-fit:cover;background:var(--soft)}
 .arch b{font-size:16px;font-weight:700;display:block}
 .arch span{font-size:13px;color:var(--sub)}
@@ -267,7 +268,7 @@ const $=s=>document.querySelector(s);
 const im=(k,cls='',lazy=true)=>{const s=SZ[k]||[4,5];return `<img src="img/${k}.jpg" width="${s[0]}" height="${s[1]}" ${lazy?'loading="lazy"':''} alt="" ${cls}>`};
 const kpi=(w,n)=>w.key?`<div class="kpi">${w.key.slice(0,n).map(k=>`<div><b>${k[0]}</b><span>${k[1]}</span></div>`).join('')}</div>`:'';
 const tg=w=>{const t=TYPE[w.org];return t?`<span class="tg ${t==='에이전시'?'ag':''}">${t}</span>`:''};
-function card(w,big){return `<a class="card" href="#/work/${w.id}"><div class="ph">${im(w.cover)}</div>
+function card(w,big){return `<a class="card" href="#/work/${w.id}"><div class="ph">${w.cover?im(w.cover):`<div class="noimg"><b>${w.brand}</b></div>`}</div>
 <div class="meta"><span>${tg(w)}${w.brand}</span><span>${w.when}</span></div><h3>${w.title}</h3><p class="hook">${w.hook}</p>${big?kpi(w,3):''}</a>`}
 function home(){
  $('#feat').innerHTML=WORK.filter(w=>w.featured).map(w=>card(w,true)).join('');
@@ -292,10 +293,10 @@ function casePage(id){
  $('#case').innerHTML=`<div class="wrap c-top"><a class="back" href="#/" data-go="work">← 전체 프로젝트</a>
  <p class="c-cat">${tg(w)}${CATS[w.cat]} · ${w.org}</p><h1>${w.title}</h1><p class="hook">${w.hook}</p>
  <div class="c-meta"><div><small>Brand</small><span>${w.brand}</span></div><div><small>Period</small><span>${w.when}</span></div><div><small>Role</small><span>${w.role}</span></div><div><small>기여도</small><span>${w.share||'—'}</span></div></div></div>
- <div class="wrap"><div class="c-hero">${im(w.cover,'',false)}</div>
+ <div class="wrap">${w.cover?`<div class="c-hero">${im(w.cover,'',false)}</div>`:''}
  ${w.key?`<div class="c-key">${w.key.map(k=>`<div><b>${k[0]}</b><span>${k[1]}</span></div>`).join('')}</div>`:''}
  <div class="c-body">${b}</div>
- <div class="gal"><h2>Visuals <span>${w.imgs.length+(w.videos?w.videos.length:0)}컷 · 사진을 누르면 크게 볼 수 있습니다</span></h2>${vids}<div class="mason">${w.imgs.map(k=>`<figure data-lb="${k}">${im(k)}</figure>`).join('')}</div></div>
+ ${w.imgs.length?`<div class="gal"><h2>Visuals <span>${w.imgs.length+(w.videos?w.videos.length:0)}컷 · 사진을 누르면 크게 볼 수 있습니다</span></h2>${vids}<div class="mason">${w.imgs.map(k=>`<figure data-lb="${k}">${im(k)}</figure>`).join('')}</div></div>`:''}
  <div class="nextp"><a href="#/work/${prev.id}"><small>← 이전 프로젝트</small><b>${prev.title}</b></a><a href="#/work/${next.id}"><small>다음 프로젝트 →</small><b>${next.title}</b></a></div></div>`;
  window.scrollTo(0,0);
 }
